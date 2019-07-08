@@ -54,7 +54,7 @@
             </div>
           </div>
           <div class="col-12 col-lg-auto mt-3 mt-lg-0 text-center">
-            Copyright © 2019 <a href=".">Tabler</a>. Theme by <a href="https://codecalm.net" target="_blank">codecalm.net</a> All rights reserved.
+            Copyright © 2019 <a href="../../components">Tabler</a>. Theme by <a href="https://codecalm.net" target="_blank">codecalm.net</a> All rights reserved.
           </div>
         </div>
       </div>
