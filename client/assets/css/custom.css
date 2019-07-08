@@ -1,0 +1,20 @@
+.page-brief{
+    padding: 14px;
+    /* border-top: 1px solid#ddd; */
+    /* border-bottom: 1px solid #ddd; */
+    margin: 20px 0 20px 0;
+}
+
+.page-brief h1{
+    text-decoration: underline;
+}
+
+.page-brief p{
+    text-transform: capitalize;
+}
+
+.input-err{
+    color: #ff3c3c;
+    font-weight: lighter;
+    text-decoration: overline;
+}
