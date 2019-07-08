@@ -18,4 +18,4 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 
-Route::get('categories', \App\App\Categories\Actions\CategoryIndexAction::class);
+Route::get('categories', \App\App\Categories\Actions\CategoryIndexAction::class)->name('categories.index');

@@ -18,8 +18,12 @@ class CategoryRepository
         return $this->category->$name(...$arguments);
     }
 
-    public function parents()
+    public function parents($direction = 'desc')
     {
-        return $this->category->parents()->get();
+        return $this->category
+            ->with('children.children')
+            ->parents()
+            ->orderBy('id', $direction)
+            ->get();
     }
 }
