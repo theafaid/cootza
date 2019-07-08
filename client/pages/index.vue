@@ -12,7 +12,9 @@
             <div v-if="! category.children.length">
               <div class="card-header">
                 <h5 class="mb-0">
-                  <nuxt-link :to="{name: 'categories'}" class="btn btn-link" style="" :key="category.slug">
+                  <nuxt-link
+                    :to="{name: 'categories-category', params: {category: category.slug}}"
+                    class="btn btn-link" style="" :key="category.slug">
                     <i :class="category.icon"></i> {{category.name}}
                   </nuxt-link>
                 </h5>
@@ -21,7 +23,9 @@
             <div v-else>
               <div class="card-header collapsed">
                 <h5 class="mb-0">
-                  <nuxt-link :to="{name: 'categories'}" class="btn btn-link" style="" :key="category.slug">
+                  <nuxt-link
+                    :to="{name: 'categories-category', params: {category: category.slug}}"
+                    class="btn btn-link" style="" :key="category.slug">
                     <i :class="category.icon"></i> {{category.name}}
                   </nuxt-link>
                   <i
@@ -43,7 +47,11 @@
                     <li
                       v-for="(child, index) in category.children"
                       class="list-group-item list-group-item-light shadowing">
-                      <a href="/" class="btn btn-link" v-text="child.name"></a>
+                      <nuxt-link
+                        :to="{name: 'categories-category-subCategory', params: {category: category.slug, subCategory: child.slug}}"
+                        class="btn btn-link"
+                        v-text="child.name">
+                      </nuxt-link>
                     </li>
                   </ul>
                 </div>
