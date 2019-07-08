@@ -4,9 +4,6 @@
     <list default="true" id="70196818-7f86-417c-bfcc-695cbfb24103" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/client/components/Footer.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/components/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tests/Feature/ExampleTest.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tests/TestCase.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/tests/TestCase.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tests/Unit/ExampleTest.php" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,22 +37,31 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/phpunit.xml">
+        <entry file="file://$PROJECT_DIR$/server/tests/TestCase.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-528">
-              <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+            <state relative-caret-position="239">
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+              <folding>
+                <element signature="e#25#75#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/app/App/Categories/Domain/Models/Category.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="239">
+              <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/tests/TestCase.php">
+        <entry file="file://$PROJECT_DIR$/server/database/migrations/2019_07_08_094138_create_categories_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
-              <folding>
-                <element signature="e#25#75#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="341">
+              <caret line="22" column="77" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
             </state>
           </provider>
         </entry>
@@ -95,6 +101,8 @@
         <option value="$USER_HOME$/Desktop/app/establish - Copy.txt" />
         <option value="$PROJECT_DIR$/server/phpunit.xml" />
         <option value="$PROJECT_DIR$/server/tests/TestCase.php" />
+        <option value="$PROJECT_DIR$/server/app/App/Categories/Domain/Models/Category.php" />
+        <option value="$PROJECT_DIR$/server/database/migrations/2019_07_08_094138_create_categories_table.php" />
       </list>
     </option>
   </component>
@@ -219,7 +227,41 @@
               <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
               <item name="cootza" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cootza" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cootza" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Categories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cootza" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Categories" type="462c0819:PsiDirectoryNode" />
+              <item name="Domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cootza" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Categories" type="462c0819:PsiDirectoryNode" />
+              <item name="Domain" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -239,6 +281,9 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Work\myApps\inProgress\cootza\server\app\App" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\Work\myApps\inProgress\cootza\client\assets" />
     </key>
@@ -266,18 +311,18 @@
       <option name="presentableId" value="Default" />
       <updated>1562568239275</updated>
       <workItem from="1562568240567" duration="91000" />
-      <workItem from="1562570018052" duration="8603000" />
+      <workItem from="1562570018052" duration="9016000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8694000" />
+    <option name="totallyTimeSpent" value="9107000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="-96" width="1550" height="848" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -292,7 +337,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3243243" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.3243243" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -527,11 +572,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server/tests/TestCase.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
+        <state relative-caret-position="239">
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
           <folding>
             <element signature="e#25#75#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/App/Categories/Domain/Models/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/database/migrations/2019_07_08_094138_create_categories_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="22" column="77" selection-start-line="22" selection-start-column="77" selection-end-line="22" selection-end-column="77" />
         </state>
       </provider>
     </entry>
