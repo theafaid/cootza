@@ -83,6 +83,8 @@
       <path value="$PROJECT_DIR$/server/vendor/sebastian/diff" />
       <path value="$PROJECT_DIR$/server/vendor/sebastian/version" />
       <path value="$PROJECT_DIR$/server/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/server/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/server/vendor/barryvdh/laravel-cors" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
