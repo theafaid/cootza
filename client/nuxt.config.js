@@ -61,6 +61,7 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    baseURL: 'http://cootza.test'
   },
   /*
   ** Build configuration

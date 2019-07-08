@@ -3,9 +3,10 @@
     <div class="header py-4">
       <div class="container">
         <div class="d-flex">
-          <a class="header-brand" href="./index.html">
+          <nuxt-link class="header-brand" :to="{name: 'index'}">
+            Cootza
             <!--          <img src="./demo/brand/tabler.svg" class="header-brand-img" alt="tabler logo">-->
-          </a>
+          </nuxt-link>
           <div class="d-flex order-lg-2 ml-auto">
             <div class="nav-item d-none d-md-flex">
               <a href="https://github.com/tabler/tabler" class="btn btn-sm btn-outline-primary" target="_blank">Source code</a>
