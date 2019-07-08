@@ -21,7 +21,7 @@ class CategoryRepository
     public function parents($direction = 'desc')
     {
         return $this->category
-            ->with('children.children')
+            ->with('children')
             ->parents()
             ->orderBy('id', $direction)
             ->get();
