@@ -10,7 +10,7 @@ use Tests\TestCase;
 class CategoryTest extends TestCase
 {
     /** @test */
-    function it_has_a_children()
+    function it_has_children()
     {
         $category = CategoryFactory::withChildren(1)->create();
 

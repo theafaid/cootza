@@ -7,7 +7,7 @@ use Faker\Generator as Faker;
 
 $factory->define(\App\App\Categories\Domain\Models\Category::class, function (Faker $faker) {
     return [
-        'name' => $name = $faker->sentence,
+        'name' => $name = $faker->unique()->sentence,
         'slug' => \Str::slug($name),
     ];
 });
