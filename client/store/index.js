@@ -18,6 +18,6 @@ export const actions = {
   async nuxtServerInit(context){
     let response = await this.$axios.$get('categories');
 
-    context.commit('SET_CATEGORIES', response);
+    context.commit('SET_CATEGORIES', response.data);
   }
 };
