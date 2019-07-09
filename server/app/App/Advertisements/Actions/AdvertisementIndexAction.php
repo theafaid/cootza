@@ -2,15 +2,23 @@
 
 namespace App\App\Advertisements\Actions;
 
-use App\App\Advertisements\Domain\Models\Advertisement;
-use App\App\Advertisements\Domain\Resources\AdvertisementIndexResource;
+use App\App\Advertisements\Responders\AdvertisementIndexResponder;
+use App\App\Advertisements\Domain\Services\AdvertisementIndexService;
 
 class AdvertisementIndexAction
 {
+    protected $service, $responder;
+
+    public function __construct(AdvertisementIndexService $service, AdvertisementIndexResponder $responder)
+    {
+        $this->service   = $service;
+        $this->responder = $responder;
+    }
+
     public function __invoke()
     {
-        return AdvertisementIndexResource::collection(
-            Advertisement::latest()->paginate(10)
+        return $this->responder->respond(
+            $this->service->handle()
         );
     }
 }
