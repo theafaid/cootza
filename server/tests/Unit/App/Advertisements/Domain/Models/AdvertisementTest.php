@@ -18,4 +18,19 @@ class AdvertisementTest extends TestCase
 
         $this->assertInstanceOf(Category::class, $ad->category);
     }
+
+    /** @test */
+    function can_fetch_preferred_category_to_swap_with()
+    {
+        $category= CategoryFactory::createChild();
+        $preferredCategoryToSwapWith = CategoryFactory::createChild();
+
+        $ad = AdvertisementFactory::preferredSwapWith($preferredCategoryToSwapWith)
+            ->createNewIn($category);
+
+        $this->assertEquals(
+            $preferredCategoryToSwapWith->id,
+            $ad->preferredCategoryToSwapWith->id
+        );
+    }
 }

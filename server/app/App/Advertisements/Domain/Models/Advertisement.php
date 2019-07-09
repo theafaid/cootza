@@ -24,4 +24,9 @@ class Advertisement extends Model
     {
         return $this->belongsTo(Category::class);
     }
+
+    public function preferredCategoryToSwapWith()
+    {
+        return $this->belongsTo(Category::class, 'preferably_swap_with', 'id');
+    }
 }

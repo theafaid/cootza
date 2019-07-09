@@ -10,18 +10,9 @@
       <change afterPath="$PROJECT_DIR$/client/pages/categories/_category/_subCategory/index.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/pages/categories/_category/index.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/App/Advertisements/Actions/AdvertisementIndexAction.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Resources/AdvertisementIndexResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/server/tests/Setup/AdvertisementFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/layouts/partials/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/layouts/partials/Navbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/pages/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/pages/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app/App/Categories/Domain/Models/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/app/App/Categories/Domain/Models/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app/App/Categories/Domain/Resources/CategoryResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/app/App/Categories/Domain/Resources/CategoryResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tests/Feature/Categories/CategoryIndexTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/tests/Feature/Categories/CategoryIndexTest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tests/Setup/CategoryFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/tests/Setup/CategoryFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tests/Unit/App/Categories/Domain/Models/CategoryTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/tests/Unit/App/Categories/Domain/Models/CategoryTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Models/Advertisement.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Models/Advertisement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tests/Setup/AdvertisementFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/tests/Setup/AdvertisementFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tests/Unit/App/Advertisements/Domain/Models/AdvertisementTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/tests/Unit/App/Advertisements/Domain/Models/AdvertisementTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,25 +46,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/tests/Unit/App/Categories/Domain/Models/CategoryTest.php">
+        <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Domain/Resources/AdvertisementIndexResource.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1085">
-              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" />
-              <folding>
-                <element signature="e#59#114#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/tests/Unit/App/Advertisements/Domain/Models/AdvertisementTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="12" column="37" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="37" />
-              <folding>
-                <element signature="e#52#98#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="279">
+              <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -81,8 +57,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/tests/Setup/AdvertisementFactory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="11" selection-start-line="11" selection-end-line="11" />
+            <state relative-caret-position="155">
+              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
               <folding>
                 <element signature="e#31#86#0#PHP" expanded="true" />
               </folding>
@@ -90,22 +66,34 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/tests/Setup/CategoryFactory.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/database/migrations/2019_07_08_184859_create_advertisements_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="337">
+              <caret line="25" column="49" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="49" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/app/App/Categories/Domain/Models/Category.php">
+        <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Domain/Models/Advertisement.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="330">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
               <folding>
-                <element signature="e#52#107#0#PHP" expanded="true" />
+                <element signature="e#56#102#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/tests/Unit/App/Advertisements/Domain/Models/AdvertisementTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="237">
+              <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+              <folding>
+                <element signature="e#52#98#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -175,15 +163,15 @@
         <option value="$PROJECT_DIR$/server/app/App/Categories/Domain/Services/CategoryIndexService.php" />
         <option value="$PROJECT_DIR$/server/app/App/Categories/Actions/CategoryIndexAction.php" />
         <option value="$PROJECT_DIR$/server/app/App/Categories/Responders/CategoryIndexResponder.php" />
-        <option value="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Resources/AdvertisementIndexResource.php" />
-        <option value="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Models/Advertisement.php" />
         <option value="$PROJECT_DIR$/server/tests/Setup/AdvertiseFactory.php" />
         <option value="$PROJECT_DIR$/server/tests/Feature/Categories/CategoryIndexTest.php" />
-        <option value="$PROJECT_DIR$/server/tests/Unit/App/Advertisements/Domain/Models/AdvertisementTest.php" />
         <option value="$PROJECT_DIR$/server/app/App/Categories/Domain/Models/Category.php" />
-        <option value="$PROJECT_DIR$/server/tests/Setup/AdvertisementFactory.php" />
         <option value="$PROJECT_DIR$/server/tests/Unit/App/Categories/Domain/Models/CategoryTest.php" />
         <option value="$PROJECT_DIR$/server/tests/Setup/CategoryFactory.php" />
+        <option value="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Resources/AdvertisementIndexResource.php" />
+        <option value="$PROJECT_DIR$/server/tests/Setup/AdvertisementFactory.php" />
+        <option value="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Models/Advertisement.php" />
+        <option value="$PROJECT_DIR$/server/tests/Unit/App/Advertisements/Domain/Models/AdvertisementTest.php" />
       </list>
     </option>
   </component>
@@ -544,12 +532,12 @@
       <workItem from="1562617308986" duration="170000" />
       <workItem from="1562598826614" duration="106000" />
       <workItem from="1562604048074" duration="15318000" />
-      <workItem from="1562668947524" duration="668000" />
+      <workItem from="1562668947524" duration="1498000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39561000" />
+    <option name="totallyTimeSpent" value="40391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1913" y="-96" width="1550" height="848" extended-state="6" />
@@ -572,7 +560,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.33719432" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.25740024" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -805,13 +793,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/database/migrations/2019_07_08_184859_create_advertisements_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="22" column="41" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/app/App/Categories/Domain/Resources/CategoryResource.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -849,34 +830,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/storage/framework/cache/facade-483384d6a70717c540736afdc1a9711c1b8b5ad5.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/storage/framework/cache/facade-0211326d47e6a13bf0addceb415cd3bdff8c6750.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="89">
           <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Domain/Models/Advertisement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="24" column="37" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-          <folding>
-            <element signature="e#56#102#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Domain/Resources/AdvertisementIndexResource.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -894,26 +851,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/tests/Setup/AdvertisementFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#31#86#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/tests/Unit/App/Advertisements/Domain/Models/AdvertisementTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="12" column="37" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="37" />
-          <folding>
-            <element signature="e#52#98#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/app/App/Categories/Domain/Models/Category.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -921,6 +858,13 @@
           <folding>
             <element signature="e#52#107#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/tests/Setup/CategoryFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="14" column="21" lean-forward="true" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -934,10 +878,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/tests/Setup/CategoryFactory.php">
+    <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Domain/Resources/AdvertisementIndexResource.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="279">
+          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/storage/framework/cache/facade-483384d6a70717c540736afdc1a9711c1b8b5ad5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/tests/Setup/AdvertisementFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <element signature="e#31#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/database/migrations/2019_07_08_184859_create_advertisements_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="337">
+          <caret line="25" column="49" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Domain/Models/Advertisement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+          <folding>
+            <element signature="e#56#102#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/tests/Unit/App/Advertisements/Domain/Models/AdvertisementTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
+          <folding>
+            <element signature="e#52#98#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
