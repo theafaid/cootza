@@ -3,7 +3,7 @@
 namespace Tests\Setup;
 
 use App\App\Advertisements\Domain\Models\Advertisement;
-use App\App\Categories\Domain\Models\Category;
+use Facades\Tests\Setup\CategoryFactory;
 
 class AdvertisementFactory
 {
@@ -16,13 +16,22 @@ class AdvertisementFactory
         return $this;
     }
 
+    public function createIn($child, $count = null)
+    {
+        return $this->generate($child, $count);
+    }
 
-    public function createNewIn(Category $child, $count = null)
+    public function create($count = null)
+    {
+        return $this->generate(CategoryFactory::createChild(), $count);
+    }
+
+    protected function generate($child, $count = null)
     {
         return factory(Advertisement::class, $count)
-                ->create([
-                    'category_id' => $child->id,
-                    'preferably_swap_with' => $this->preferredSwapWith ?: null
-                ]);
+            ->create([
+                'category_id' => $child->id,
+                'preferably_swap_with' => $this->preferredSwapWith ?: null
+            ]);
     }
 }

@@ -10,7 +10,7 @@ class AdvertisementIndexAction
     public function __invoke()
     {
         return AdvertisementIndexResource::collection(
-            Advertisement::all()
+            Advertisement::latest()->paginate(10)
         );
     }
 }

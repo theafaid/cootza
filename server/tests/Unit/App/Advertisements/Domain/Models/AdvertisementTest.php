@@ -14,7 +14,7 @@ class AdvertisementTest extends TestCase
     {
         $child = CategoryFactory::createChild();
 
-        $ad = AdvertisementFactory::createNewIn($child);
+        $ad = AdvertisementFactory::createIn($child);
 
         $this->assertInstanceOf(Category::class, $ad->category);
     }
@@ -26,7 +26,7 @@ class AdvertisementTest extends TestCase
         $preferredCategoryToSwapWith = CategoryFactory::createChild();
 
         $ad = AdvertisementFactory::preferredSwapWith($preferredCategoryToSwapWith)
-            ->createNewIn($category);
+            ->createIn($category);
 
         $this->assertEquals(
             $preferredCategoryToSwapWith->id,

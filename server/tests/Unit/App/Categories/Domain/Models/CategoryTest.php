@@ -49,7 +49,7 @@ class CategoryTest extends TestCase
 
         $this->assertInstanceOf(Collection::class, $child->advertisements);
 
-        $ads = AdvertisementFactory::createNewIn($child, 3);
+        $ads = AdvertisementFactory::createIn($child, 3);
 
         $this->assertInstanceOf(Advertisement::class, $ads->random());
     }
