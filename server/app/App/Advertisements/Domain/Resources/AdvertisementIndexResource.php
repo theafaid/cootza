@@ -18,7 +18,7 @@ class AdvertisementIndexResource extends JsonResource
         // return parent::toArray($request);
         return [
             'id' => $this->id,
-            'name' => $this->name,
+            'title' => $this->title,
             'description' => $this->description,
             'slug' => $this->slug,
             'category' => new CategoryResource($this->whenLoaded('category'))
