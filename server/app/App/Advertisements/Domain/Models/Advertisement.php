@@ -15,6 +15,8 @@ class Advertisement extends Model
         'preferably_swap_with'
     ];
 
+    protected $with = ['category'];
+
     public function getRouteKeyName()
     {
         return "slug";

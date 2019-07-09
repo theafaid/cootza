@@ -20,9 +20,6 @@ class AdvertisementRepository
 
     public function paginated($count = 15)
     {
-        return $this->advertisement
-            ->with('category')
-            ->latest()
-            ->paginate($count);
+        return $this->advertisement->latest()->paginate($count);
     }
 }
