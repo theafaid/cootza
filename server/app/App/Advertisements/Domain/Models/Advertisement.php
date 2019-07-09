@@ -2,6 +2,7 @@
 
 namespace App\App\Advertisements\Domain\Models;
 
+use App\App\Advertisements\Domain\Scoping\Scoper;
 use App\App\Categories\Domain\Models\Category;
 use Illuminate\Database\Eloquent\Model;
 
@@ -20,6 +21,11 @@ class Advertisement extends Model
     public function getRouteKeyName()
     {
         return "slug";
+    }
+
+    public function scopeWithScopes($builder, $scopes = [])
+    {
+        return (new Scoper(request()))->apply($builder, $scopes);
     }
 
     public function category()
