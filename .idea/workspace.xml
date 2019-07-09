@@ -11,7 +11,72 @@
       <change afterPath="$PROJECT_DIR$/client/pages/categories/_category/_subCategory/index.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/pages/categories/_category/index.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Models/Advertisement.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Models/Advertisement.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/css/custom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/css/dashboard.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/css/dashboard.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/css/dashboard.rtl.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/css/dashboard.rtl.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/css/form-wizard-rtl.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/css/form-wizard-rtl.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/fonts/feather/feather-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/fonts/feather/feather-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/images/flags/ca.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/images/flags/ca.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/images/flags/us.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/images/flags/us.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/js/core.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/js/core.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/js/dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/js/dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/js/require.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/js/require.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/js/vendors/bootstrap.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/js/vendors/bootstrap.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/js/vendors/chart.bundle.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/js/vendors/chart.bundle.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/js/vendors/circle-progress.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/js/vendors/circle-progress.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/js/vendors/jquery-3.2.1.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/js/vendors/jquery-3.2.1.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/js/vendors/jquery-3.2.1.slim.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/js/vendors/jquery-3.2.1.slim.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/js/vendors/jquery-jvectormap-2.0.3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/js/vendors/jquery-jvectormap-2.0.3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/js/vendors/jquery.sparkline.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/js/vendors/jquery.sparkline.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/js/vendors/jquery.tablesorter.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/js/vendors/jquery.tablesorter.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/js/vendors/selectize.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/js/vendors/selectize.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/charts-c3/js/d3.v3.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/charts-c3/js/d3.v3.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/charts-c3/plugin.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/charts-c3/plugin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/charts-c3/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/charts-c3/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/dataTables.bootstrap.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/dataTables.bootstrap.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/dataTables.bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/dataTables.bootstrap.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/dataTables.bootstrap4.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/dataTables.foundation.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/dataTables.foundation.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/dataTables.foundation.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/dataTables.foundation.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/dataTables.jqueryui.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/dataTables.jqueryui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/dataTables.jqueryui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/dataTables.jqueryui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/dataTables.semanticui.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/dataTables.semanticui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/dataTables.semanticui.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/dataTables.semanticui.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/jquery.dataTables.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/jquery.dataTables.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/jquery.dataTables.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/css/jquery.dataTables.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/dataTables.bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/dataTables.bootstrap.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/dataTables.bootstrap.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/dataTables.bootstrap.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/dataTables.bootstrap4.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/dataTables.foundation.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/dataTables.foundation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/dataTables.foundation.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/dataTables.foundation.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/dataTables.jqueryui.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/dataTables.jqueryui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/dataTables.jqueryui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/dataTables.jqueryui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/dataTables.semanticui.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/dataTables.semanticui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/dataTables.semanticui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/dataTables.semanticui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/jquery.dataTables.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/jquery.dataTables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/jquery.dataTables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/DataTables-1.10.16/js/jquery.dataTables.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/datatables.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/datatables.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/datatables.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/datatables.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/datatables.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/datatables.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/datatables.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/datatables.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/datatables/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/datatables/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/fullcalendar/js/fullcalendar.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/fullcalendar/js/fullcalendar.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/fullcalendar/plugin.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/fullcalendar/plugin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/fullcalendar/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/fullcalendar/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/iconfonts/fonts/materialdesignicons/materialdesignicons-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/iconfonts/fonts/materialdesignicons/materialdesignicons-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/iconfonts/fonts/themify/themify.svg" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/iconfonts/fonts/themify/themify.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/iconfonts/plugin.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/iconfonts/plugin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/input-mask/js/jquery.mask.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/input-mask/js/jquery.mask.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/input-mask/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/input-mask/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/prismjs/js/prism.pack.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/prismjs/js/prism.pack.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/prismjs/plugin.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/prismjs/plugin.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/assets/plugins/prismjs/plugin.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/assets/plugins/prismjs/plugin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/layouts/default.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/layouts/default.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/layouts/partials/Navbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client/layouts/partials/Navbar.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,33 +110,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Domain/Models/Advertisement.php">
+        <entry file="file://$PROJECT_DIR$/client/nuxt.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
-              <folding>
-                <element signature="e#56#105#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Actions/AdvertisementIndexAction.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="558">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="344">
+              <caret line="71" column="6" lean-forward="true" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Domain/Scoping/Scoper.php">
+        <entry file="file://$PROJECT_DIR$/client/pages/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="437">
+              <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Downloads/Compressed/stackhtml-206/Stack 2.0.6/Stack 2.0.6/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="1461" column="30" selection-start-line="1461" selection-start-column="30" selection-end-line="1461" selection-end-column="30" />
               <folding>
-                <element signature="e#57#98#0#PHP" expanded="true" />
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#section#3;n#div#1;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -92,22 +158,17 @@
       <find>i&gt;</find>
       <find>search</find>
       <find>c</find>
+      <find>../../</find>
+      <find>ajax-loader</find>
+      <find>img</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/client" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/pages/categories/_category/index.vue" />
-        <option value="$PROJECT_DIR$/client/pages/categories/_category/_subCategory/index.vue" />
-        <option value="$PROJECT_DIR$/client/layouts/partials/Navbar.vue" />
-        <option value="$PROJECT_DIR$/client/pages/index.vue" />
-        <option value="$PROJECT_DIR$/server/app/App/Products/Domain/Models/Product.php" />
-        <option value="$PROJECT_DIR$/server/tests/Unit/App/Products/Domain/Models/CategoryTest.php" />
-        <option value="$PROJECT_DIR$/server/tests/Setup/Product.Factory.php" />
-        <option value="$PROJECT_DIR$/server/tests/Unit/App/Products/Domain/Models/ProductTest.php" />
         <option value="$PROJECT_DIR$/server/app/App/Products/Domain/Resources/ProductIndexResource.php" />
         <option value="$PROJECT_DIR$/server/app/App/Products/Actions/ProductIndexAction.php" />
         <option value="$PROJECT_DIR$/server/app/App/Categories/Domain/Resources/CategoryResource.php" />
@@ -151,6 +212,14 @@
         <option value="$PROJECT_DIR$/server/app/App/Advertisements/Actions/AdvertisementIndexAction.php" />
         <option value="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Models/Advertisement.php" />
         <option value="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Scoping/Scoper.php" />
+        <option value="$PROJECT_DIR$/client/assets/css/assets/styles.min.css" />
+        <option value="E:/Work/final templates/berserkhtml-189/html/panels.html" />
+        <option value="$PROJECT_DIR$/client/layouts/default.vue" />
+        <option value="$PROJECT_DIR$/client/package-lock.json" />
+        <option value="$USER_HOME$/Desktop/nuxt/nuxt.config.js" />
+        <option value="$PROJECT_DIR$/client/nuxt.config.js" />
+        <option value="$PROJECT_DIR$/client/layouts/partials/Navbar.vue" />
+        <option value="$PROJECT_DIR$/client/pages/index.vue" />
       </list>
     </option>
   </component>
@@ -241,7 +310,7 @@
       <path value="$PROJECT_DIR$/server/vendor/barryvdh/laravel-cors" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -284,56 +353,19 @@
             <path>
               <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
               <item name="cootza" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
               <item name="cootza" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name=".nuxt" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
               <item name="cootza" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cootza" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="Advertisements" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cootza" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="Advertisements" type="462c0819:PsiDirectoryNode" />
-              <item name="Actions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cootza" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="Advertisements" type="462c0819:PsiDirectoryNode" />
-              <item name="Domain" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cootza" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="Advertisements" type="462c0819:PsiDirectoryNode" />
-              <item name="Domain" type="462c0819:PsiDirectoryNode" />
-              <item name="Scoping" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -347,7 +379,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/app/App/Advertisements/Responders" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/assets" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -356,11 +388,14 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\cootza\client\.nuxt\components" />
+      <recent name="C:\xampp\htdocs\cootza\client" />
+      <recent name="C:\xampp\htdocs\cootza\client\assets\js" />
       <recent name="E:\Work\myApps\inProgress\cootza\client\layouts\partials" />
       <recent name="E:\Work\myApps\inProgress\cootza\server\app\App\Categories\Domain" />
-      <recent name="E:\Work\myApps\inProgress\cootza\server\app\App" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\cootza\client\assets" />
       <recent name="C:\xampp\htdocs\cootza\server\app\App\Advertisements\Responders" />
       <recent name="C:\xampp\htdocs\cootza\server\app\App\Products\Domain" />
       <recent name="E:\Work\myApps\inProgress\cootza\client\assets" />
@@ -395,18 +430,22 @@
       <workItem from="1562598826614" duration="106000" />
       <workItem from="1562604048074" duration="15318000" />
       <workItem from="1562668947524" duration="3613000" />
-      <workItem from="1562672634075" duration="8492000" />
+      <workItem from="1562672634075" duration="11777000" />
+      <workItem from="1562686402794" duration="401000" />
+      <workItem from="1562687843029" duration="3331000" />
+      <workItem from="1562702134036" duration="858000" />
+      <workItem from="1562704316437" duration="287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50998000" />
+    <option name="totallyTimeSpent" value="59160000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24895833" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17447917" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -423,7 +462,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2361111" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2487412" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -443,97 +482,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../apache/conf/httpd.conf" />
-    <entry file="file://$PROJECT_DIR$/../../apache/conf/extra/httpd-vhosts.conf" />
-    <entry file="file://$PROJECT_DIR$/server/vendor/barryvdh/laravel-cors/src/HandleCors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1066">
-          <caret line="34" column="33" lean-forward="true" selection-start-line="34" selection-start-column="33" selection-end-line="34" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/config/cors.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="16" column="35" lean-forward="true" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="43" column="10" lean-forward="true" selection-start-line="43" selection-start-column="10" selection-end-line="43" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/nuxt.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="14" column="114" selection-start-line="14" selection-start-column="114" selection-end-line="14" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/App/Categories/Domain/Repositories/CategoryRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="20" column="48" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/pages/categories/_category/_subCategory.vue" />
-    <entry file="file://$PROJECT_DIR$/client/pages/categories/_main_category.vue" />
-    <entry file="file://$PROJECT_DIR$/client/pages/categories/_category/_subCategory/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/layouts/partials/Navbar.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="84" column="44" selection-start-line="84" selection-start-column="44" selection-end-line="84" selection-end-column="44" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/pages/categories/_category/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="31">
-          <caret line="1" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/pages/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2604">
-          <caret line="84" column="3" lean-forward="true" selection-start-line="84" selection-start-column="3" selection-end-line="84" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Work/myApps/inProgress/blog/resources/views/layouts/partials/header.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="65">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="15" column="3" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-          <folding>
-            <element signature="e#7#389#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/database/migrations/2019_07_08_094138_create_categories_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="31">
@@ -729,13 +677,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Domain/Services/AdvertisementShowService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Domain/Services/AdvertisementShowService.php" />
     <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Domain/Resources/AdvertisementResource.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
@@ -818,13 +760,144 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://E:/Work/final templates/berserkhtml-189/html/header-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="25" column="60" selection-start-line="25" selection-start-column="60" selection-end-line="25" selection-end-column="60" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Work/final templates/berserkhtml-189/html/home-page-1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="33" column="58" selection-start-line="33" selection-start-column="58" selection-end-line="33" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/assets/js/assets/berserk.js" />
     <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Domain/Scoping/Scoper.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="310">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
           <folding>
             <element signature="e#57#98#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/assets/js/scripts.min.js" />
+    <entry file="file://$PROJECT_DIR$/client/assets/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="6" column="397" selection-start-line="6" selection-start-column="396" selection-end-line="6" selection-end-column="397" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/assets/css/assets/styles.min.css" />
+    <entry file="file://$PROJECT_DIR$/client/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="10" column="19" lean-forward="true" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Work/final templates/berserkhtml-189/html/panels.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <element signature="n#src#0;n#img#0;n#a#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#1;n#a#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#5046#5051#0" expanded="true" />
+            <element signature="e#11295#11300#0" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#3;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#li#0;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#18499#18505#0" expanded="true" />
+            <element signature="e#18543#18549#0" expanded="true" />
+            <element signature="e#18913#18919#0" expanded="true" />
+            <element signature="e#18945#18951#0" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#a#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#1;n#a#0;n#div#0;n#div#2;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#3;n#div#3;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#3;n#div#3;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#3;n#div#3;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#3;n#div#1;n#div#0;n#div#3;n#div#3;n#div#0;n#div#0;n#div#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="e#46888#46893#0" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#0;n#div#0;n#div#2;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#src#0;n#img#0;n#div#1;n#div#0;n#div#2;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/stackhtml-206/Stack 2.0.6/Stack 2.0.6/elements-image-backgrounds.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-372" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/nuxt/nuxt.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="40" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/layouts/default.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/layouts/partials/Navbar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="10" lean-forward="true" selection-start-column="10" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Downloads/Compressed/stackhtml-206/Stack 2.0.6/Stack 2.0.6/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="1461" column="30" selection-start-line="1461" selection-start-column="30" selection-end-line="1461" selection-end-column="30" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#2;n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#section#3;n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/nuxt.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="71" column="6" lean-forward="true" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/pages/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="83" column="5" lean-forward="true" selection-start-line="83" selection-start-column="5" selection-end-line="83" selection-end-column="5" />
         </state>
       </provider>
     </entry>
