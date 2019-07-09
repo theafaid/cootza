@@ -7,9 +7,11 @@
     <list default="true" id="70196818-7f86-417c-bfcc-695cbfb24103" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/client/layouts/partials/Footer.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/layouts/partials/Navbar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/pages/ads/_ad/index.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/pages/categories/_category/_subCategory/index.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/pages/categories/_category/index.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,17 +43,7 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/client/store/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="508">
-              <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -74,7 +66,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/pages/categories/_slug.vue" />
         <option value="$PROJECT_DIR$/client/pages/categories/category/_slug.vue" />
         <option value="$PROJECT_DIR$/client/pages/categories/_category/index.vue" />
         <option value="$PROJECT_DIR$/client/pages/categories/_category/_subCategory/index.vue" />
@@ -125,6 +116,7 @@
         <option value="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Models/Advertisement.php" />
         <option value="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Repositories/AdvertisementRepository.php" />
         <option value="$PROJECT_DIR$/client/store/index.js" />
+        <option value="$PROJECT_DIR$/client/pages/ads/_ad/index.vue" />
       </list>
     </option>
   </component>
@@ -260,18 +252,6 @@
               <item name="cootza" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cootza" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cootza" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -332,16 +312,15 @@
       <workItem from="1562598826614" duration="106000" />
       <workItem from="1562604048074" duration="15318000" />
       <workItem from="1562668947524" duration="3613000" />
-      <workItem from="1562672634075" duration="4568000" />
+      <workItem from="1562672634075" duration="7172000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47074000" />
+    <option name="totallyTimeSpent" value="49678000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24895833" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -380,7 +359,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../../apache/conf/extra/httpd-xampp.conf" />
     <entry file="file://$PROJECT_DIR$/../../apache/conf/extra/httpd-default.conf" />
     <entry file="file://$PROJECT_DIR$/../../apache/conf/httpd.conf" />
     <entry file="file://$PROJECT_DIR$/../../apache/conf/extra/httpd-vhosts.conf" />
@@ -743,10 +721,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/pages/ads/_ad/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="12" column="7" lean-forward="true" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/store/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="508">
-          <caret line="20" column="50" selection-start-line="20" selection-start-column="50" selection-end-line="20" selection-end-column="50" />
+        <state relative-caret-position="124">
+          <caret line="4" column="15" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="15" />
         </state>
       </provider>
     </entry>
