@@ -10,7 +10,7 @@ class CategoryIndexTest extends TestCase
     /** @test */
     function it_returns_a_collection_of_categories()
     {
-        $categories = CategoryFactory::create(2);
+        $categories = CategoryFactory::createParent(2);
 
         $response = $this->getJson(route('categories.index'));
 
@@ -24,7 +24,7 @@ class CategoryIndexTest extends TestCase
     /** @test */
     function it_returns_parents_only()
     {
-         CategoryFactory::withChildren(2)->create();
+         CategoryFactory::withChildren(2)->createParent();
 
          $this->getJson(route('categories.index'))
             ->assertJsonCount(1);
@@ -33,7 +33,7 @@ class CategoryIndexTest extends TestCase
     /** @test */
     function it_returns_categories_ordered_by_latest()
     {
-        $categories = CategoryFactory::create(3);
+        $categories = CategoryFactory::createParent(3);
 
         $this->getJson(route('categories.index'))
             ->assertSeeInOrder([

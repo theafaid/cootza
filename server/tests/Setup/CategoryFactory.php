@@ -15,15 +15,35 @@ class CategoryFactory
         return $this;
     }
 
-    public function create($count = null)
+    public function withAds($count)
     {
-        $category = factory(Category::class, $count)->create();
+        $this->adsCount = $count;
+
+        return $this;
+    }
+
+    public function createParent($count = null)
+    {
+        if($count) return factory(Category::class, $count)->create();
+
+        $category = factory(Category::class)->create();
 
         if($this->childrenCount){
-            $category->children()->save(
-                factory(Category::class, $count)->create()
-            );
+            factory(Category::class, $this->childrenCount)
+                ->create(['parent_id' => $category->id]);
         }
+
         return $category;
+    }
+
+    public function createChild()
+    {
+        $mainCategory = factory(Category::class)->create();
+
+        return $mainCategory->children()->save(
+           factory(Category::class)->create([
+               'parent_id' => $mainCategory->id
+           ])
+        );
     }
 }

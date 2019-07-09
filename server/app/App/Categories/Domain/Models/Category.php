@@ -2,6 +2,7 @@
 
 namespace App\App\Categories\Domain\Models;
 
+use App\App\Advertisements\Domain\Models\Advertisement;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
@@ -26,5 +27,10 @@ class Category extends Model
     public function parent()
     {
         return $this->belongsTo(Category::class, 'parent_id', 'id');
+    }
+
+    public function advertisements()
+    {
+        return $this->hasMany(Advertisement::class, 'category_id', 'id');
     }
 }

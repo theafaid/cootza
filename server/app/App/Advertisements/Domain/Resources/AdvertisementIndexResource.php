@@ -1,10 +1,12 @@
 <?php
 
-namespace App\App\Categories\Domain\Resources;
+namespace App\App\Advertisements\Domain\Resources;
 
+use App\App\Categories\Domain\Models\Category;
+use App\App\Categories\Domain\Resources\CategoryResource;
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class CategoryResource extends JsonResource
+class AdvertisementIndexResource extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -16,10 +18,11 @@ class CategoryResource extends JsonResource
     {
         // return parent::toArray($request);
         return [
+            'id' => $this->id,
             'name' => $this->name,
+            'description' => $this->description,
             'slug' => $this->slug,
-            'icon' => $this->icon,
-            'children' =>  CategoryResource::collection($this->whenLoaded('children'))
+            'category' => new CategoryResource($this->category)
         ];
     }
 }
