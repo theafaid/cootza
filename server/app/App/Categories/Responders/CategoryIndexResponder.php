@@ -6,6 +6,6 @@ class CategoryIndexResponder
 {
     public function respond($categories)
     {
-        return response($categories, 200);
+        return response()->json(['data' => $categories], 200);
     }
 }

@@ -14,7 +14,7 @@ class CategoryIndexTest extends TestCase
 
         $response = $this->getJson(route('categories.index'));
 
-        $response->assertJsonCount(2);
+        $response->assertJsonCount(2, 'data');
 
         $categories->each(function ($category) use ($response){
             $response->assertJsonFragment(['slug' => $category->slug]);
