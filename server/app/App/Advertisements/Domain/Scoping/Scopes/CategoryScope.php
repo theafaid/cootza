@@ -10,8 +10,9 @@ class CategoryScope implements Scope
 {
     public function apply(Builder $builder, $value)
     {
-        return $builder->whereHas('category', function($builder) use ($value){
-            $category = Category::whereSlug($value)->first();
+        $category = Category::whereSlug($value)->first();
+
+        return $builder->whereHas('category', function($builder) use ($value, $category){
 
             $builder->whereIn(
                 'slug',
