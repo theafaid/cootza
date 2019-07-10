@@ -1,13 +1,19 @@
 <template>
-  <div>
-    <h6 v-for="ad in ads">
-      <nuxt-link :to="{name: 'ads-ad', params: {ad: ad.slug}}">{{ad.title}}</nuxt-link>
-    </h6>
+  <div class="container">
+    <div class="row">
+      <ad  v-for="ad in ads" :ad="ad" :key="ad.slug"></ad>
+    </div>
   </div>
 </template>
 
 <script>
+  import Ad from '@/components/ads/ad'
+
   export default {
+    components: {
+      ad: Ad
+    },
+
     data(){
       return {
         ads: []
