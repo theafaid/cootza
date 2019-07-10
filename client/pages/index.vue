@@ -11,62 +11,42 @@
         </form>
       </div>
     </div>
-    <div class="row row-cards">
+    <div class="row">
       <div class="col-md-3 col-xs-6" v-for="(category, index) in categories">
-        <div id="accordion">
-          <div class="card shadowing">
-            <div v-if="! category.children.length">
-              <div class="card-header">
-                <h5 class="mb-0">
-                  <nuxt-link
-                    :to="{name: 'categories-category', params: {category: category.slug}}"
-                    class="btn btn-link" style="" :key="category.slug">
-                    <i :class="category.icon"></i> {{category.name}}
-                  </nuxt-link>
-                </h5>
+        <div v-if="! category.children.length">
+          <div class="card p-3">
+            <div class="d-flex align-items-center">
+              <span class="stamp stamp-md bg-blue mr-3">
+                <i class="fe fe-dollar-sign"></i>
+              </span>
+              <div>
+                <h6 class="m-0">
+                  <nuxt-link class="text-muted-dark" :to="{name: 'categories-category', params: {category: category.slug}}" v-text="category.name"></nuxt-link>
+                </h6>
               </div>
             </div>
-            <div v-else>
-              <div class="card-header collapsed">
-                <h5 class="mb-0">
-                  <button
-                    :id="'heading-'+index"
-                    data-toggle="collapse"
-                    :data-target="'#collapse-'+index"
-                    aria-expanded="false"
-                    :aria-controls="'#collapse-'+index"
-                    class="btn btn-link" style="" :key="category.slug">
-                    <i :class="category.icon"></i> {{category.name}}
-                  </button>
-                </h5>
+          </div>
+        </div>
+        <div v-else>
+          <div class="card p-3" data-toggle="collapse" :data-target="'#collapse-'+category.slug" aria-expanded="true" :aria-controls="'collapse-'+category.slug">
+            <div class="d-flex align-items-center">
+              <span class="stamp stamp-md bg-blue mr-3">
+                <i class="fe fe-dollar-sign"></i>
+              </span>
+              <div>
+                <h6 class="m-0 text-muted-dark btn btn-link" v-text="category.name">
+                </h6>
               </div>
-              <div
-                :id="'collapse-'+index"
-                :aria-labelledby="'heading-'+index"
-                data-parent="#accordion"
-                class="collapse">
-                <div class="card-body">
-                  <ul class="list-group">
-                    <li
-                      class="list-group-item list-group-item-light shadowing">
-                      <nuxt-link
-                        :to="{name: 'categories-category', params: {category: category.slug}}"
-                        class="btn btn-link">
-                        All in {{category.name}}
-                      </nuxt-link>
-                    </li>
-                    <li
-                      v-for="(child, index) in category.children"
-                      class="list-group-item list-group-item-light shadowing">
-                      <nuxt-link
-                        :to="{name: 'categories-category-subCategory', params: {category: category.slug, subCategory: child.slug}}"
-                        class="btn btn-link"
-                        v-text="child.name">
-                      </nuxt-link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+            </div>
+          </div>
+
+          <div class="collapse" :id="'collapse-'+category.slug">
+            <div class="card card-body">
+              <h6 v-for="(child, index) in category.children">
+                <nuxt-link :to="{name: 'categories-category-subCategory', params: {category: category.slug, subCategory: child.slug}}">
+                  {{child.name}}
+                </nuxt-link>
+              </h6>
             </div>
           </div>
         </div>

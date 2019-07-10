@@ -11,8 +11,6 @@
       <change afterPath="$PROJECT_DIR$/client/pages/categories/_category/_subCategory/index.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/pages/categories/_category/index.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Resources/AdvertisementIndexResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Resources/AdvertisementIndexResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app/App/Categories/Domain/Resources/CategoryResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/app/App/Categories/Domain/Resources/CategoryResource.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -63,20 +61,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/components/ads/ad.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+            <state relative-caret-position="197">
+              <caret line="23" column="50" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/pages/index.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1922">
-              <caret line="71" column="14" lean-forward="true" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
+            <state relative-caret-position="434">
+              <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -162,7 +160,6 @@
         <option value="$PROJECT_DIR$/client/package-lock.json" />
         <option value="$USER_HOME$/Desktop/nuxt/nuxt.config.js" />
         <option value="$PROJECT_DIR$/client/layouts/partials/Navbar.vue" />
-        <option value="$PROJECT_DIR$/client/pages/index.vue" />
         <option value="$PROJECT_DIR$/client/pages/ads/_ad/index.vue" />
         <option value="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Models/Advertisement.php" />
         <option value="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Services/AdvertisementIndexService.php" />
@@ -181,6 +178,7 @@
         <option value="$PROJECT_DIR$/server/app/App/Categories/Domain/Resources/CategoryResource.php" />
         <option value="$PROJECT_DIR$/client/pages/categories/_category/_subCategory/index.vue" />
         <option value="$PROJECT_DIR$/client/components/ads/ad.vue" />
+        <option value="$PROJECT_DIR$/client/pages/index.vue" />
       </list>
     </option>
   </component>
@@ -327,29 +325,7 @@
               <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
               <item name="cootza" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="ads" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cootza" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cootza" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="ads" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cootza" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="ads" type="462c0819:PsiDirectoryNode" />
-              <item name="_ad" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
@@ -357,23 +333,6 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
               <item name="categories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cootza" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="categories" type="462c0819:PsiDirectoryNode" />
-              <item name="_category" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cootza" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-              <item name="categories" type="462c0819:PsiDirectoryNode" />
-              <item name="_category" type="462c0819:PsiDirectoryNode" />
-              <item name="_subCategory" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -444,18 +403,18 @@
       <workItem from="1562704316437" duration="1507000" />
       <workItem from="1562756968056" duration="2817000" />
       <workItem from="1562764169464" duration="3252000" />
-      <workItem from="1562770548622" duration="9498000" />
+      <workItem from="1562770548622" duration="12825000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="75947000" />
+    <option name="totallyTimeSpent" value="79274000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17447917" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17447917" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -472,7 +431,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.2487412" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2487412" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -492,20 +451,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/storage/framework/cache/facade-483384d6a70717c540736afdc1a9711c1b8b5ad5.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/database/migrations/2019_07_08_184859_create_advertisements_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="25" column="49" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/tests/Unit/App/Advertisements/Domain/Models/AdvertisementTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -880,13 +825,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/pages/categories/_category/_subCategory/index.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="23" column="92" selection-start-line="23" selection-start-column="92" selection-end-line="23" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/pages/categories/_category/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
@@ -894,17 +832,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/pages/index.vue">
+    <entry file="file://$PROJECT_DIR$/client/components/ads/ad.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1922">
-          <caret line="71" column="14" lean-forward="true" selection-start-line="71" selection-start-column="14" selection-end-line="71" selection-end-column="14" />
+        <state relative-caret-position="197">
+          <caret line="23" column="50" lean-forward="true" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/components/ads/ad.vue">
+    <entry file="file://$PROJECT_DIR$/client/pages/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/block.rnc">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="55" column="30" selection-start-line="55" selection-start-column="30" selection-end-line="55" selection-end-column="30" />
+        <state relative-caret-position="236">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/pages/categories/_category/_subCategory/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="23" column="92" selection-start-line="23" selection-start-column="92" selection-end-line="23" selection-end-column="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/pages/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="434">
+          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
         </state>
       </provider>
     </entry>
