@@ -10,12 +10,13 @@
         <a href="#"><img class="card-img-top" src="https://via.placeholder.com/150" alt="And this isn't my nose. This is a false one."></a>
       </div>
       <div class="card-footer">
+        <span><i class="fe fe-clock "></i> {{ad.created_at}}</span>
         <div class="d-flex align-items-center pt-5 mt-auto">
           <div class="btn btn-secondary">
             <nuxt-link :to="mainCategoryLink" class="text-muted-dark">
               {{ad.category.parent.name}}
             </nuxt-link>
-            >>
+            >
             <nuxt-link :to="subCategoryLink" class="text-muted-dark">
               {{ad.category.name}}
             </nuxt-link>
