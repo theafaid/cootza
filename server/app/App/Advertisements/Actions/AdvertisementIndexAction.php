@@ -2,6 +2,7 @@
 
 namespace App\App\Advertisements\Actions;
 
+use App\App\Advertisements\Domain\Scoping\Scopes\CategoryScope;
 use App\App\Advertisements\Responders\AdvertisementIndexResponder;
 use App\App\Advertisements\Domain\Services\AdvertisementIndexService;
 

@@ -18,8 +18,11 @@ class AdvertisementRepository
         return $this->advertisement->$name(...$arguments);
     }
 
-    public function paginated($count = 15)
+    public function paginated($scopes, $count = 15)
     {
-        return $this->advertisement->latest()->paginate($count);
+        return $this->advertisement
+            ->withScopes($scopes)
+            ->latest()
+            ->paginate($count);
     }
 }

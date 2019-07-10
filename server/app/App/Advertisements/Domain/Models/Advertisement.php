@@ -4,6 +4,7 @@ namespace App\App\Advertisements\Domain\Models;
 
 use App\App\Advertisements\Domain\Scoping\Scoper;
 use App\App\Categories\Domain\Models\Category;
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
 class Advertisement extends Model
@@ -23,7 +24,7 @@ class Advertisement extends Model
         return "slug";
     }
 
-    public function scopeWithScopes($builder, $scopes = [])
+    public function scopeWithScopes(Builder $builder, $scopes = [])
     {
         return (new Scoper(request()))->apply($builder, $scopes);
     }
