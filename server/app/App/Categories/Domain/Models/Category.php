@@ -14,6 +14,11 @@ class Category extends Model
         'icon'
     ];
 
+    public function getRouteKeyName()
+    {
+        return "slug";
+    }
+
     public function scopeParents(Builder $builder)
     {
         $builder->where('parent_id', null);

@@ -45,5 +45,26 @@ class AdvertisementIndexTest extends TestCase
             ['slug' => $ads[0]->slug],
             ['slug' => $ads[1]->slug]
         );
+
+        $response->assertJsonMissing(['slug' => $otherAd->slug]);
     }
+
+    /** @test */
+    function when_filtering_by_parent_category_it_returns_all_ads_in_all_children_of_the_parent_category()
+    {
+        $parentCategory = CategoryFactory::withChildren(3)->createParent();
+        $ads = AdvertisementFactory::createIn($parentCategory->children->random(), 5);
+        $otherAds = AdvertisementFactory::create(3);
+
+        $response = $this->getJson(route('advertisements.index', ['category' => $parentCategory->slug]));
+
+        $response->assertJsonCount(5, 'data');
+
+        $ads->each(function ($ad) use ($response) {
+            $response->assertJsonFragment(['slug' => $ad->slug]);
+        });
+
+        $response->assertJsonMissing(['slug' => $otherAds->random()->slug]);
+    }
+
 }

@@ -3,6 +3,7 @@
 namespace Tests\Feature\Categories;
 
 use Facades\Tests\Setup\CategoryFactory;
+use Facades\Tests\Setup\AdvertisementFactory;
 use Tests\TestCase;
 
 class CategoryIndexTest extends TestCase
