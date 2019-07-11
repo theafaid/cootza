@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\Generic\Domain\Models;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -11,6 +11,14 @@ class User extends Authenticatable implements JWTSubject
 {
     use Notifiable;
 
+    protected static function boot()
+    {
+        parent::boot();
+
+        static::creating(function($user){
+            $user->password = bcrypt($user->password);
+        });
+    }
     /**
      * The attributes that are mass assignable.
      *

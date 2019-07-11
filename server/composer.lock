@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cf3f5ea84706a0e2405e859a9c0ffcca",
+    "content-hash": "e87328156ae539574c86fce5e67b4801",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3289,6 +3289,66 @@
                 "environment"
             ],
             "time": "2019-06-15T22:40:20+00:00"
+        },
+        {
+            "name": "waavi/sanitizer",
+            "version": "1.0.11",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Waavi/Sanitizer.git",
+                "reference": "ab12ea90dcaae937dcce9970abb30dbfe9e35b78"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Waavi/Sanitizer/zipball/ab12ea90dcaae937dcce9970abb30dbfe9e35b78",
+                "reference": "ab12ea90dcaae937dcce9970abb30dbfe9e35b78",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/support": "~5.3",
+                "illuminate/validation": "~5.3",
+                "nesbot/carbon": "~1.0|~2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~6.0|~7.0|~8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Waavi\\Sanitizer\\Laravel\\SanitizerServiceProvider"
+                    ],
+                    "aliases": {
+                        "Sanitizer": "Waavi\\Sanitizer\\Laravel\\Facade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Waavi\\Sanitizer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "William Wallace San Paulo",
+                    "email": "info@waavi.com"
+                }
+            ],
+            "description": "Data sanitizer and Laravel 5 form requests with input sanitation.",
+            "keywords": [
+                "input",
+                "input filter",
+                "input sanitation",
+                "input sanitizer",
+                "laravel",
+                "sanitation",
+                "transform input"
+            ],
+            "time": "2019-04-25T13:11:15+00:00"
         }
     ],
     "packages-dev": [
