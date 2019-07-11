@@ -90,6 +90,7 @@
       <path value="$PROJECT_DIR$/server/vendor/tymon/jwt-auth" />
       <path value="$PROJECT_DIR$/server/vendor/lcobucci/jwt" />
       <path value="$PROJECT_DIR$/server/vendor/namshi/jose" />
+      <path value="$PROJECT_DIR$/server/vendor/waavi/sanitizer" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />
