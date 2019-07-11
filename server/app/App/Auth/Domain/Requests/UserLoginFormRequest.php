@@ -4,7 +4,7 @@ namespace App\App\Auth\Domain\Requests;
 
 use App\Http\Requests\BaseFormRequest;
 
-class UserRegisterFormRequest extends BaseFormRequest
+class UserLoginFormRequest extends BaseFormRequest
 {
 
     /**
@@ -25,9 +25,8 @@ class UserRegisterFormRequest extends BaseFormRequest
     public function rules()
     {
         return [
-            'name' => 'required|string|max:255',
-            'email' => 'required|string|email|max:255|unique:users,email',
-            'password' => 'required|confirmed|string|min:6|max:255',
+            'email' => 'required|string|email|max:255',
+            'password' => 'required|string|max:255',
         ];
     }
 
@@ -37,10 +36,8 @@ class UserRegisterFormRequest extends BaseFormRequest
     public function filters()
     {
         return [
-            'name'  => 'capitalize',
             'email' => 'trim|lowercase',
-            'password' => 'trim',
-            'password_confirmation' => 'trim'
+            'password'  => 'trim',
         ];
     }
 }

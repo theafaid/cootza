@@ -23,5 +23,6 @@ Route::get('ads', \App\App\Advertisements\Actions\AdvertisementIndexAction::clas
 Route::get('ads/{advertisement}', \App\App\Advertisements\Actions\AdvertisementShowAction::class)->name('advertisements.show');
 
 Route::group(['prefix' => 'auth'], function() {
+    Route::post('login', \App\App\Auth\Actions\UserLoginAction::class)->name('login');
     Route::post('register', \App\App\Auth\Actions\UserRegisterAction::class)->name('register');
 });
