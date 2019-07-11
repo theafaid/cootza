@@ -4,6 +4,7 @@ namespace App\App\Advertisements\Domain\Models;
 
 use App\App\Advertisements\Domain\Scoping\Scoper;
 use App\App\Categories\Domain\Models\Category;
+use App\Generic\Domain\Models\User;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 
@@ -27,6 +28,11 @@ class Advertisement extends Model
     public function scopeWithScopes(Builder $builder, $scopes = [])
     {
         return (new Scoper(request()))->apply($builder, $scopes);
+    }
+
+    public function owner()
+    {
+        return $this->belongsTo(User::class, 'user_id', 'id');
     }
 
     public function category()

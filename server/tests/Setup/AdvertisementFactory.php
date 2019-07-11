@@ -7,11 +7,18 @@ use Facades\Tests\Setup\CategoryFactory;
 
 class AdvertisementFactory
 {
-    protected $preferredSwapWith;
+    protected $preferredSwapWith, $owner;
 
     public function preferredSwapWith($category)
     {
         $this->preferredSwapWith = $category;
+
+        return $this;
+    }
+
+    public function ownedBy($user)
+    {
+        $this->owner = $user;
 
         return $this;
     }
@@ -31,7 +38,8 @@ class AdvertisementFactory
         return factory(Advertisement::class, $count)
             ->create([
                 'category_id' => $child->id,
-                'preferably_swap_with' => $this->preferredSwapWith ?: null
+                'preferably_swap_with' => $this->preferredSwapWith ?: null,
+                'user_id' => $this->owner ? $this->owner->id : \Facades\Tests\Setup\UserFactory::create()
             ]);
     }
 }

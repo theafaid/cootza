@@ -18,13 +18,19 @@ class CreateAdvertisementsTable extends Migration
             $table->string('title');
             $table->string('slug')->unique();
             $table->text('description');
+            $table->unsignedBigInteger('user_id');
             $table->unsignedSmallInteger('category_id');
             // preferable_swap_with contains id of the category which user wants to swap with
             $table->unsignedSmallInteger('preferably_swap_with')->nullable();
 
+            // Delete the ad if creator deleted
+            $table->foreign('user_id')->references('id')
+                ->on('users')->onDelete('cascade');
+
             // Set preferable_swap_with to null when remove the preferable category
             $table->foreign('preferably_swap_with')->references('id')
                 ->on('categories')->onDelete('SET NULL');
+
             // Delete the ad if it's category deleted
             $table->foreign('category_id')->references('id')
                 ->on('categories')->onDelete('cascade');
