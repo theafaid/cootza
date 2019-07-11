@@ -8,6 +8,11 @@
             <!--          <img src="./demo/brand/tabler.svg" class="header-brand-img" alt="tabler logo">-->
           </nuxt-link>
           <div class="d-flex order-lg-2 ml-auto">
+            <div class="nav-item  d-md-flex">
+              <nuxt-link :to="{name: 'auth-login'}" class="btn btn-sm btn-outline-primary">
+                Login
+              </nuxt-link>
+            </div>
             <div class="nav-item d-none d-md-flex">
               <a href="https://github.com/tabler/tabler" class="btn btn-sm btn-outline-primary" target="_blank">Source code</a>
             </div>
