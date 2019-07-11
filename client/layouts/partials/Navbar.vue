@@ -74,9 +74,9 @@
                   <a class="dropdown-item" href="#">
                     <i class="dropdown-icon fe fe-help-circle"></i> Need help?
                   </a>
-                  <a class="dropdown-item" href="#">
+                  <button class="dropdown-item" href="#" @click.prevent="logout">
                     <i class="dropdown-icon fe fe-log-out"></i> Sign out
-                  </a>
+                  </button>
                 </div>
               </div>
             </template>
@@ -150,5 +150,12 @@
 
 <script>
   export default {
+    methods: {
+      logout(){
+        this.$auth.logout()
+
+        this.$router.replace({name: 'index'});
+      }
+    }
   }
 </script>

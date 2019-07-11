@@ -65,11 +65,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/client/layouts/partials/Navbar.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="341">
-              <caret line="17" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="544">
+              <caret line="156" column="46" selection-start-line="156" selection-start-column="46" selection-end-line="156" selection-end-column="46" />
               <folding>
                 <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
-                <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -441,12 +440,12 @@
       <workItem from="1562764169464" duration="3252000" />
       <workItem from="1562770548622" duration="13757000" />
       <workItem from="1562788236927" duration="3807000" />
-      <workItem from="1562832029429" duration="23092000" />
+      <workItem from="1562832029429" duration="23234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107105000" />
+    <option name="totallyTimeSpent" value="107247000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1280" height="1024" extended-state="6" />
@@ -879,11 +878,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/layouts/partials/Navbar.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="544">
+          <caret line="156" column="46" selection-start-line="156" selection-start-column="46" selection-end-line="156" selection-end-column="46" />
           <folding>
             <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
           </folding>
         </state>
       </provider>
