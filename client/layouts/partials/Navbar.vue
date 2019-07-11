@@ -8,7 +8,7 @@
             <!--          <img src="./demo/brand/tabler.svg" class="header-brand-img" alt="tabler logo">-->
           </nuxt-link>
           <div class="d-flex order-lg-2 ml-auto">
-            <template v-if="! loggedIn">
+            <template v-if="! $auth.loggedIn">
               <div class="nav-item d-none d-md-flex">
                 <nuxt-link :to="{name: 'auth-login'}" class="btn btn-sm btn-outline-primary">Login</nuxt-link>
               </div>
@@ -52,7 +52,7 @@
                 <a href="#" class="nav-link pr-0 leading-none" data-toggle="dropdown">
                   <span class="avatar" style="background-image: url(./demo/faces/female/25.jpg)"></span>
                   <span class="ml-2 d-none d-lg-block">
-                      <span class="text-default" v-text="user.name"></span>
+                      <span class="text-default" v-text="$auth.user.name"></span>
                       <small class="text-muted d-block mt-1">Administrator</small>
                     </span>
                 </a>
