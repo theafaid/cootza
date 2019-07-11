@@ -9,6 +9,7 @@
         <div class="form-group">
           <label class="form-label">Email address</label>
           <input class="form-control" aria-describedby="emailHelp" placeholder="Enter email" v-model="form.email">
+          <span class="text-red">{{errors}}</span>
         </div>
         <div class="form-group">
           <label class="form-label">

@@ -48,7 +48,8 @@ export default {
   */
   plugins: [
     "~plugins/axios.js",
-    "~plugins/mixins/user.js"
+    "~plugins/mixins/user.js",
+    "~plugins/mixins/validation.js"
   ],
   /*
   ** Nuxt.js modules
