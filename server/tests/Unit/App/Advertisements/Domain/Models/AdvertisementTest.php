@@ -3,8 +3,10 @@
 namespace Tests\Unit\App\Ads\Domain\Models;
 
 use App\App\Categories\Domain\Models\Category;
+use App\Generic\Domain\Models\User;
 use Facades\Tests\Setup\CategoryFactory;
 use Facades\Tests\Setup\AdvertisementFactory;
+use Facades\Tests\Setup\UserFactory;
 use Tests\TestCase;
 
 class AdvertisementTest extends TestCase
@@ -32,5 +34,15 @@ class AdvertisementTest extends TestCase
             $preferredCategoryToSwapWith->id,
             $ad->preferredCategoryToSwapWith->id
         );
+    }
+
+    /** @test */
+    function it_belongs_to_a_user()
+    {
+        $ad = AdvertisementFactory::ownedBy($user = UserFactory::create())->create();
+
+        $this->assertInstanceOf(User::class, $ad->owner);
+
+        $this->assertEquals($user->id, $ad->owner->id);
     }
 }
