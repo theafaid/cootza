@@ -3,6 +3,7 @@
 namespace Tests\Feature\Auth;
 
 use App\Generic\Domain\Models\User;
+use Facades\Tests\Setup\UserFactory;
 use Tests\TestCase;
 
 class UserLoginTest extends TestCase
@@ -11,31 +12,26 @@ class UserLoginTest extends TestCase
     /** @test */
     function it_requires_an_email()
     {
-        $this->postJson(route('login'))
-            ->assertJsonValidationErrors(['email']);
+        $this->endPoint()->assertJsonValidationErrors(['email']);
     }
 
     /** @test */
     function it_requires_an_valid_email()
     {
-        $this->postJson(route('login'), ['email' => 'test'])
+        $this->endPoint(['email' => 'test'])
             ->assertJsonValidationErrors(['email']);
     }
 
     /** @test */
     function it_requires_a_password()
     {
-        $this->postJson(route('login'))
-            ->assertJsonValidationErrors(['password']);
+         $this->endPoint()->assertJsonValidationErrors(['password']);
     }
 
     /** @test */
     function it_returns_a_validation_error_with_wrong_credentials()
     {
-        $this->postJson(route('login'), [
-            'email' => 'test@test.com',
-            'password' => 'testtest'
-        ])
+        $this->endPoint($this->fakeData())
             ->assertStatus(422)
             ->assertJsonValidationErrors(['email']);
     }
@@ -43,9 +39,9 @@ class UserLoginTest extends TestCase
     /** @test */
     function it_returns_a_token_with_user_if_credentials_do_match()
     {
-        $user = factory(User::class)->create(['password' => 'testtest']);
+        $user = UserFactory::create(['password' => 'testtest']);
 
-        $response = $this->postJson(route('login'), [
+        $response = $this->endPoint([
             'email' => $user->email,
             'password' => 'testtest'
         ]);
@@ -57,6 +53,17 @@ class UserLoginTest extends TestCase
         $response->assertJsonFragment(['email' => $user->email]);
     }
 
+    function endPoint($data = [])
+    {
+        return $this->postJson(route('login'), $data);
+    }
 
+    function fakeData()
+    {
+        return [
+            'email' => 'test@test.com',
+            'password' => 'testtest'
+        ];
+    }
 }
 

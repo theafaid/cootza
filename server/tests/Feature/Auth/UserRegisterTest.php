@@ -3,6 +3,7 @@
 namespace Tests\Feature\Auth;
 
 use App\Generic\Domain\Models\User;
+use Facades\Tests\Setup\UserFactory;
 use Tests\TestCase;
 
 class UserRegisterTest extends TestCase
@@ -31,7 +32,7 @@ class UserRegisterTest extends TestCase
     /**  @test */
     function it_requires_a_unique_email()
     {
-        $user = factory(User::class)->create();
+        $user = UserFactory::create();
 
         $this->postJson(route('register'), [
             'email' => $user->email
