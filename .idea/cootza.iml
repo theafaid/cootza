@@ -7,6 +7,11 @@
       <sourceFolder url="file://$MODULE_DIR$/server/tests" isTestSource="true" packagePrefix="Tests\" />
       <excludeFolder url="file://$MODULE_DIR$/server/vendor/asm89/stack-cors" />
       <excludeFolder url="file://$MODULE_DIR$/server/vendor/barryvdh/laravel-cors" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/lcobucci/jwt" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/namshi/jose" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/symfony/polyfill-php56" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/symfony/polyfill-util" />
+      <excludeFolder url="file://$MODULE_DIR$/server/vendor/tymon/jwt-auth" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
