@@ -14,7 +14,7 @@ Route::get('ads/{advertisement}', \App\App\Advertisements\Actions\AdvertisementS
 Route::group(['prefix' => 'auth'], function() {
     Route::group(['middleware' => 'auth:api'], function() {
         Route::get('me', \App\App\Auth\Actions\MeAction::class)->name('me');
-        Route::any('logout', \App\App\Auth\Actions\UserLogoutAction::class)->name('logout');
+        Route::post('logout', \App\App\Auth\Actions\UserLogoutAction::class)->name('logout');
     });
     Route::post('login', \App\App\Auth\Actions\UserLoginAction::class)->name('login');
     Route::post('register', \App\App\Auth\Actions\UserRegisterAction::class)->name('register');
