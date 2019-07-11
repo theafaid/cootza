@@ -12,9 +12,6 @@
       <change afterPath="$PROJECT_DIR$/client/pages/categories/_category/_subCategory/index.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/pages/categories/_category/index.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/routes/api.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/tests/Feature/Auth/UserLogoutTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/tests/Feature/Auth/UserLogoutTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,32 +44,63 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/pages/auth/login.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="248">
+              <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/store/auth.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="31">
+              <caret line="1" column="15" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/layouts/partials/Navbar.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="341">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
+              <folding>
+                <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/plugins/mixins/user.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="124">
+              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/pages/index.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1922">
+              <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/nuxt.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="73" column="50" selection-start-line="73" selection-start-column="50" selection-end-line="73" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/routes/api.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/tests/Feature/Auth/UserLogoutTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
-              <caret line="17" column="30" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-              <folding>
-                <element signature="e#38#74#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="296">
+              <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -106,6 +134,8 @@
       <find>json</find>
       <find>source</find>
       <find>api</find>
+      <find>sign ou</find>
+      <find>login</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -114,8 +144,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/app/App/Advertisements/Actions/AdvertisementIndexAction.php" />
-        <option value="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Repositories/AdvertisementRepository.php" />
         <option value="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Scoping/Scoper.php" />
         <option value="$PROJECT_DIR$/server/app/App/Categories/Domain/Models/Category.php" />
         <option value="$PROJECT_DIR$/server/tests/Feature/Categories/CategoryIndexTest.php" />
@@ -156,15 +184,17 @@
         <option value="$PROJECT_DIR$/server/.env" />
         <option value="$PROJECT_DIR$/server/tests/TestCase.php" />
         <option value="$PROJECT_DIR$/server/tests/Feature/Auth/MeTest.php" />
-        <option value="$PROJECT_DIR$/client/layouts/partials/Navbar.vue" />
-        <option value="$PROJECT_DIR$/client/pages/auth/login.vue" />
         <option value="$PROJECT_DIR$/server/app/App/Auth/Domain/Services/UserLoginService.php" />
         <option value="$PROJECT_DIR$/server/app/App/Auth/Domain/Services/UserLogoutService.php" />
         <option value="$PROJECT_DIR$/server/app/App/Auth/Responders/UserLogoutResponder.php" />
         <option value="$PROJECT_DIR$/server/app/App/Auth/Actions/UserLogoutAction.php" />
         <option value="$PROJECT_DIR$/server/routes/api.php" />
         <option value="$PROJECT_DIR$/server/tests/Feature/Auth/UserLogoutTest.php" />
+        <option value="$PROJECT_DIR$/client/pages/auth/login.vue" />
+        <option value="$PROJECT_DIR$/client/store/auth.js" />
+        <option value="$PROJECT_DIR$/client/plugins/mixins/user.js" />
         <option value="$PROJECT_DIR$/client/nuxt.config.js" />
+        <option value="$PROJECT_DIR$/client/layouts/partials/Navbar.vue" />
       </list>
     </option>
   </component>
@@ -284,28 +314,39 @@
             <path>
               <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
               <item name="cootza" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
               <item name="cootza" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
               <item name="cootza" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="Feature" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
               <item name="cootza" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-              <item name="Feature" type="462c0819:PsiDirectoryNode" />
-              <item name="Auth" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cootza" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="mixins" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cootza" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="store" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -400,12 +441,12 @@
       <workItem from="1562764169464" duration="3252000" />
       <workItem from="1562770548622" duration="13757000" />
       <workItem from="1562788236927" duration="3807000" />
-      <workItem from="1562832029429" duration="20700000" />
+      <workItem from="1562832029429" duration="23092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="104713000" />
+    <option name="totallyTimeSpent" value="107105000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="0" width="1280" height="1024" extended-state="6" />
@@ -448,27 +489,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/config/jwt.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4255">
-          <caret line="103" column="25" selection-start-line="103" selection-start-column="18" selection-end-line="103" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/vendor/tymon/jwt-auth/src/Contracts/JWTSubject.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="409">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/vendor/laravel/framework/src/Illuminate/Validation/ValidationException.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-585">
@@ -754,13 +774,6 @@
     <entry file="file://E:/Work/myApps/inProgress/cootza/client/node_modules/esm/esm.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/layouts/partials/Navbar.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/app/App/Auth/Actions/UserLoginAction.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="248">
@@ -768,13 +781,6 @@
           <folding>
             <element signature="e#40#94#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/pages/auth/login.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
@@ -833,10 +839,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/store/auth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="1" column="15" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/pages/auth/login.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="248">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/pages/index.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1922">
+          <caret line="62" column="6" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/plugins/mixins/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/nuxt.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="73" column="50" selection-start-line="73" selection-start-column="50" selection-end-line="73" selection-end-column="50" />
+        <state relative-caret-position="296">
+          <caret line="49" column="29" selection-start-line="49" selection-start-column="29" selection-end-line="49" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/layouts/partials/Navbar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#template#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
