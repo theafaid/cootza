@@ -9,7 +9,7 @@
         <div class="form-group">
           <label class="form-label">Email address</label>
           <input class="form-control" aria-describedby="emailHelp" placeholder="Enter email" v-model="form.email">
-          <span class="text-red">{{errors}}</span>
+          <span class="text-red" v-if="errors.email" v-text="errors.email[0]"></span>
         </div>
         <div class="form-group">
           <label class="form-label">
@@ -17,6 +17,7 @@
             <a href="./forgot-password.html" class="float-right small">I forgot password</a>
           </label>
           <input type="password" class="form-control" placeholder="Password" v-model="form.password">
+          <span class="text-red" v-if="errors.password" v-text="errors.password[0]"></span>
         </div>
         <div class="form-group">
           <label class="custom-control custom-checkbox">
@@ -47,12 +48,16 @@
     },
 
     methods: {
-      async login(){
-        await this.$auth.loginWith('local', {data: this.form});
+       login(){
+        this.$auth.loginWith('local', {data: this.form})
+          .then(() => console.log('success'));
 
-        this.$router.replace({
-          name: 'index'
-        });
+        return;
+        // await this.$auth.loginWith('local', {data: this.form});
+        //
+        // this.$router.replace({
+        //   name: 'index'
+        // });
       }
     }
   }

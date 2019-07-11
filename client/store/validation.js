@@ -10,7 +10,7 @@ export const getters = {
 
 export const mutations = {
     SET_VALIDATION_ERRORS(state, errors){
-      this.state.errors = errors;
+      state.errors = errors;
     }
 };
 
