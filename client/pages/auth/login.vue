@@ -52,8 +52,11 @@
 
     methods: {
        login(){
-        this.$auth.loginWith('local', {data: this.form})
-          .then(() => console.log('success'));
+         if(this.form.email && this.form.password){
+           this.$auth.loginWith('local', {data: this.form})
+             .then(() => console.log('success'));
+         }
+
 
         return;
         // await this.$auth.loginWith('local', {data: this.form});
