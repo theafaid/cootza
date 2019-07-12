@@ -7,7 +7,7 @@ use Facades\Tests\Setup\CategoryFactory;
 
 class AdvertisementFactory
 {
-    protected $preferredSwapWith, $owner;
+    protected $preferredSwapWith, $owner, $offersCount = null;
 
     public function preferredSwapWith($category)
     {

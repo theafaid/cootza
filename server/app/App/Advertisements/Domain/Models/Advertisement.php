@@ -2,6 +2,7 @@
 
 namespace App\App\Advertisements\Domain\Models;
 
+use App\App\AdvertisementOffer\Domain\Models\AdvertisementOffer;
 use App\App\Advertisements\Domain\Scoping\Scoper;
 use App\App\Categories\Domain\Models\Category;
 use App\Generic\Domain\Models\User;
@@ -43,5 +44,10 @@ class Advertisement extends Model
     public function preferredCategoryToSwapWith()
     {
         return $this->belongsTo(Category::class, 'preferably_swap_with', 'id');
+    }
+
+    public function offers()
+    {
+        return $this->hasMany(AdvertisementOffer::class);
     }
 }
