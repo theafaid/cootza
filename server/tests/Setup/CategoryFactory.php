@@ -8,6 +8,10 @@ class CategoryFactory
 {
     protected $childrenCount = 0;
 
+    /**
+     * @param $count
+     * @return $this
+     */
     public function withChildren($count)
     {
         $this->childrenCount = $count;
@@ -15,6 +19,10 @@ class CategoryFactory
         return $this;
     }
 
+    /**
+     * @param $count
+     * @return $this
+     */
     public function withAds($count)
     {
         $this->adsCount = $count;
@@ -22,28 +30,37 @@ class CategoryFactory
         return $this;
     }
 
+
+    /**
+     * Create a parent which has no parents
+     * @param null $count
+     * @return mixed
+     */
     public function createParent($count = null)
     {
+        // Multiple Categories >> returns multiple
         if($count) return factory(Category::class, $count)->create();
 
-        $category = factory(Category::class)->create();
+        // Single Category
 
-        if($this->childrenCount){
-            factory(Category::class, $this->childrenCount)
-                ->create(['parent_id' => $category->id]);
-        }
+        $parentCategory = factory(Category::class)->create();
 
-        return $category;
+        if($this->childrenCount) $this->createChild($parentCategory);
+
+        return $parentCategory;
     }
 
-    public function createChild()
+    /**
+     * Create a child category which has parent
+     * @param null $parentCategory
+     * @return mixed
+     */
+    public function createChild($parentCategory = null)
     {
-        $mainCategory = factory(Category::class)->create();
+        $parentCategory = $parentCategory ?: factory(Category::class)->create();
 
-        return $mainCategory->children()->save(
-           factory(Category::class)->create([
-               'parent_id' => $mainCategory->id
-           ])
-        );
+        return $parentCategory->children()->save(
+           factory(Category::class)->create()
+        ); // return parent
     }
 }

@@ -3,14 +3,13 @@
 namespace Tests\Unit\App\Ads\Domain\Models;
 
 use App\App\AdvertisementOffer\Domain\Models\AdvertisementOffer;
-use App\App\Advertisements\Domain\Models\Advertisement;
-use App\App\Categories\Domain\Models\Category;
-use App\Generic\Domain\Models\User;
-use Facades\Tests\Setup\CategoryFactory;
-use Facades\Tests\Setup\AdvertisementFactory;
-use Facades\Tests\Setup\UserFactory;
 use Facades\Tests\Setup\AdvertisementOfferFactory;
+use App\App\Categories\Domain\Models\Category;
+use Facades\Tests\Setup\AdvertisementFactory;
 use Illuminate\Database\Eloquent\Collection;
+use Facades\Tests\Setup\CategoryFactory;
+use Facades\Tests\Setup\UserFactory;
+use App\Generic\Domain\Models\User;
 use Tests\TestCase;
 
 class AdvertisementTest extends TestCase
@@ -18,9 +17,9 @@ class AdvertisementTest extends TestCase
     /** @test */
     function it_belongs_to_a_category()
     {
-        $child = CategoryFactory::createChild();
-
-        $ad = AdvertisementFactory::createIn($child);
+        $ad = AdvertisementFactory::createIn(
+            CategoryFactory::createChild()
+        );
 
         $this->assertInstanceOf(Category::class, $ad->category);
     }

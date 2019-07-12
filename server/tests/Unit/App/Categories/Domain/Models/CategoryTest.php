@@ -25,7 +25,11 @@ class CategoryTest extends TestCase
     {
         $category = CategoryFactory::withChildren(1)->createParent();
 
-        $this->assertInstanceOf(Category::class , $category->children[0]->parent);
+        $this->assertInstanceOf
+        (
+            Category::class ,
+            $category->children[0]->parent
+        );
     }
 
     /** @test */
@@ -47,10 +51,17 @@ class CategoryTest extends TestCase
     {
         $child = CategoryFactory::createChild();
 
-        $this->assertInstanceOf(Collection::class, $child->advertisements);
+        $this->assertInstanceOf
+        (
+            Collection::class,
+            $child->advertisements
+        );
 
         $ads = AdvertisementFactory::createIn($child, 3);
 
-        $this->assertInstanceOf(Advertisement::class, $ads->random());
+        $this->assertInstanceOf(
+            Advertisement::class,
+            $ads->random()
+        );
     }
 }
