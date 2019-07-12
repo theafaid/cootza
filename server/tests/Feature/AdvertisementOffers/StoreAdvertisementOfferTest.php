@@ -49,7 +49,7 @@ class StoreAdvertisementOfferTest extends TestCase
 
         $response = $this->jsonAs(
             $user, 'POST', route('advertisement.offers', $otherAdvertisement->slug),[
-                'offer' => $offerContent = AdvertisementOfferFactory::generateOfferContent($userAdvertisements)
+                'offer' => ['advertisements' => $userAdvertisements->pluck('id'), 'additional_money' => '100']
             ]
         );
 
@@ -57,7 +57,10 @@ class StoreAdvertisementOfferTest extends TestCase
 
         $this->assertNotNull($otherAdvertisement->offers);
 
-        $this->assertEquals(json_encode($offerContent), $otherAdvertisement->offers->first()->content);
+        $this->assertEquals(
+            json_encode(AdvertisementOfferFactory::generateOfferContent($userAdvertisements)),
+            $otherAdvertisement->offers->first()->content
+        );
     }
 
 

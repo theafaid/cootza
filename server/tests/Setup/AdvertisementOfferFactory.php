@@ -88,6 +88,7 @@ class AdvertisementOfferFactory
 
         foreach($advertisements as $advertisement){
             array_push($data['advertisements'], [
+                    'id' => $advertisement->id,
                     'title' => $advertisement->title,
                     'slug'  => $advertisement->slug,
                     'main_image' => null,
