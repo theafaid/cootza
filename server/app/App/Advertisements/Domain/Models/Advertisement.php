@@ -70,4 +70,9 @@ class Advertisement extends Model
     {
         return $this->hasMany(AdvertisementOffer::class, 'provided_to', 'id');
     }
+
+    public function ownedBy($user)
+    {
+        return $this->owner->is($user);
+    }
 }

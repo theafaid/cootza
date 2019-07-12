@@ -27,11 +27,13 @@ Route::group(['middleware' => 'auth:api'], function() {
     });
 
     Route::post(
-        'ads/{advertisement}/offer',
+        'ads/{advertisement}/offers',
         \App\App\AdvertisementOffers\Actions\StoreAdvertisementOfferAction::class
     )->name('advertisement.offers');
 });
 
 
-Route::post('login', \App\App\Auth\Actions\UserLoginAction::class)->name('login');
-Route::post('register', \App\App\Auth\Actions\UserRegisterAction::class)->name('register');
+Route::group(['prefix' => 'auth'], function () {
+    Route::post('login', \App\App\Auth\Actions\UserLoginAction::class)->name('login');
+    Route::post('register', \App\App\Auth\Actions\UserRegisterAction::class)->name('register');
+});

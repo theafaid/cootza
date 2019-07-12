@@ -38,7 +38,7 @@ class AdvertisementOfferFactory
             ]);
         }
 
-        $this->offerContent['additional_money'] = $price;
+        $this->offerContent['money'] = $price;
 
         return $this;
     }
@@ -96,7 +96,7 @@ class AdvertisementOfferFactory
             );
         }
 
-        $data['additional_money'] = '100';
+        $data['money'] = 100;
 
         return $data;
     }

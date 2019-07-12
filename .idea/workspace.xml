@@ -13,7 +13,10 @@
       <change afterPath="$PROJECT_DIR$/client/pages/categories/_category/index.vue" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/plugins/mixins/validation.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/client/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server/app/App/Categories/Responders/CategoryIndexResponder.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/app/App/Categories/Responders/CategoryIndexResponder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/app/App/AdvertisementOffers/Actions/StoreAdvertisementOfferAction.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/app/App/AdvertisementOffers/Actions/StoreAdvertisementOfferAction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server/tests/Feature/AdvertisementOffers/StoreAdvertisementOfferTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/server/tests/Feature/AdvertisementOffers/StoreAdvertisementOfferTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,54 +50,33 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/tests/Unit/App/Advertisements/Domain/Models/AdvertisementTest.php">
+        <entry file="file://$PROJECT_DIR$/server/app/App/AdvertisementOffers/Domain/Requests/AdvertisementOfferStoreRequest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="370">
-              <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
-              <folding>
-                <element signature="e#52#116#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="352">
+              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/tests/Setup/CategoryFactory.php">
+        <entry file="file://$PROJECT_DIR$/server/tests/Feature/AdvertisementOffers/StoreAdvertisementOfferTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/app/App/Categories/Actions/CategoryIndexAction.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
+            <state>
+              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
               <folding>
-                <element signature="e#46#106#0#PHP" expanded="true" />
+                <element signature="e#54#99#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/app/App/Categories/Responders/CategoryIndexResponder.php">
+        <entry file="file://$PROJECT_DIR$/server/app/App/AdvertisementOffers/Actions/StoreAdvertisementOfferAction.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="248">
-              <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/server/tests/Unit/Generic/Domain/Models/UserTest.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-237">
-              <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+            <state relative-caret-position="279">
+              <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
               <folding>
-                <element signature="e#52#116#0#PHP" expanded="true" />
+                <element signature="e#55#110#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -104,9 +86,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>.svg</find>
-      <find>face</find>
-      <find>require</find>
       <find>&lt;script</find>
       <find>female</find>
       <find>&lt;script&gt;</find>
@@ -133,6 +112,10 @@
       <find>sign out</find>
       <find>user</find>
       <find>user_id</find>
+      <find>Offer</find>
+      <find>App\App\AdvertisementOffer\Domain\Models\AdvertisementOffer</find>
+      <find>no</find>
+      <find>offers</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -141,17 +124,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/app/App/Auth/Domain/Repositories/UserRepository.php" />
-        <option value="$PROJECT_DIR$/server/app/App/Auth/Domain/Services/UserRegisterService.php" />
-        <option value="$PROJECT_DIR$/server/app/App/Auth/Responders/UserRegisterResponder.php" />
-        <option value="$PROJECT_DIR$/server/app/App/Auth/Actions/UserRegisterAction.php" />
-        <option value="$PROJECT_DIR$/server/app/App/Auth/Domain/Requests/UserRegisterFormRequest.php" />
-        <option value="$PROJECT_DIR$/server/app/App/Auth/Domain/Requests/UserLoginFormRequest.php" />
-        <option value="$PROJECT_DIR$/server/app/App/Auth/Responders/UserLoginResponder.php" />
-        <option value="$PROJECT_DIR$/server/app/App/Auth/Actions/UserLoginAction.php" />
-        <option value="$PROJECT_DIR$/server/tests/Setup/UserFactory.php" />
-        <option value="$PROJECT_DIR$/server/tests/Feature/Auth/UserLoginTest.php" />
-        <option value="$PROJECT_DIR$/server/tests/Feature/Auth/UserRegisterTest.php" />
         <option value="$PROJECT_DIR$/server/app/App/Auth/Actions/MeAction.php" />
         <option value="$PROJECT_DIR$/server/.env" />
         <option value="$PROJECT_DIR$/server/tests/TestCase.php" />
@@ -176,22 +148,33 @@
         <option value="$PROJECT_DIR$/client/pages/index.vue" />
         <option value="$PROJECT_DIR$/server/tests/Feature/SwapDeals/SwapDealTest.php" />
         <option value="$PROJECT_DIR$/server/app/App/AdOffer/Actions/MakeAdvertisementOfferAction.php" />
-        <option value="$PROJECT_DIR$/server/routes/api.php" />
         <option value="$PROJECT_DIR$/server/app/App/AdOffer/Domain/Models/AdvertisementOffer.php" />
-        <option value="$PROJECT_DIR$/server/tests/Setup/AdvertisementFactory.php" />
         <option value="$PROJECT_DIR$/server/tests/Setup/AdvertisementOffer.php" />
-        <option value="$PROJECT_DIR$/server/app/Generic/Domain/Models/User.php" />
         <option value="$PROJECT_DIR$/server/database/factories/AdvertisementFactory.php" />
         <option value="$PROJECT_DIR$/server/app/App/AdvertisementOffer/Domain/Models/AdvertisementOffer.php" />
-        <option value="$PROJECT_DIR$/server/database/factories/AdvertsiementOfferFactory.php" />
-        <option value="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Models/Advertisement.php" />
-        <option value="$PROJECT_DIR$/server/tests/Setup/AdvertisementOfferFactory.php" />
-        <option value="$PROJECT_DIR$/server/database/migrations/2019_07_12_093413_create_advertisement_offers_table.php" />
-        <option value="$PROJECT_DIR$/server/tests/Unit/Generic/Domain/Models/UserTest.php" />
-        <option value="$PROJECT_DIR$/server/tests/Unit/App/Advertisements/Domain/Models/AdvertisementTest.php" />
         <option value="$PROJECT_DIR$/server/tests/Setup/CategoryFactory.php" />
         <option value="$PROJECT_DIR$/server/tests/Unit/App/Categories/Domain/Models/CategoryTest.php" />
         <option value="$PROJECT_DIR$/server/app/App/Categories/Responders/CategoryIndexResponder.php" />
+        <option value="$PROJECT_DIR$/server/app/App/Advertisements/Actions/AdvertisementIndexAction.php" />
+        <option value="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Services/AdvertisementIndexService.php" />
+        <option value="$PROJECT_DIR$/server/app/App/Advertisements/Responders/AdvertisementIndexResponder.php" />
+        <option value="$PROJECT_DIR$/server/app/App/Advertisements/Actions/AdvertisementShowAction.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/uncompleted.txt" />
+        <option value="$PROJECT_DIR$/server/app/App/AdvertisementOffer/Actions/StoreAdvertisementOfferAction.php" />
+        <option value="$PROJECT_DIR$/server/tests/Unit/App/Advertisements/Domain/Models/AdvertisementTest.php" />
+        <option value="$PROJECT_DIR$/server/app/App/Advertisements/Domain/Models/Advertisement.php" />
+        <option value="$PROJECT_DIR$/server/routes/api.php" />
+        <option value="$PROJECT_DIR$/server/tests/Setup/AdvertisementFactory.php" />
+        <option value="$PROJECT_DIR$/server/app/App/AdvertisementOffers/Domain/Models/AdvertisementOffer.php" />
+        <option value="$PROJECT_DIR$/server/database/migrations/2019_07_12_093413_create_advertisement_offers_table.php" />
+        <option value="$PROJECT_DIR$/server/database/factories/AdvertsiementOfferFactory.php" />
+        <option value="$PROJECT_DIR$/server/app/Generic/Domain/Models/User.php" />
+        <option value="$PROJECT_DIR$/server/tests/Unit/Generic/Domain/Models/UserTest.php" />
+        <option value="$PROJECT_DIR$/server/tests/Setup/AdvertisementOfferFactory.php" />
+        <option value="$PROJECT_DIR$/server/tests/Feature/AdvertisementOffers/StoreAdvertisementOfferTest.php" />
+        <option value="$PROJECT_DIR$/server/app/App/AdvertisementOffers/Domain/Requests/AdvertisementOfferStoreRequest.php" />
+        <option value="$PROJECT_DIR$/server/app/App/AdvertisementOffers/Actions/StoreAdvertisementOfferAction.php" />
       </list>
     </option>
   </component>
@@ -332,7 +315,7 @@
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="Categories" type="462c0819:PsiDirectoryNode" />
+              <item name="AdvertisementOffers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
@@ -340,8 +323,95 @@
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="App" type="462c0819:PsiDirectoryNode" />
-              <item name="Categories" type="462c0819:PsiDirectoryNode" />
+              <item name="AdvertisementOffers" type="462c0819:PsiDirectoryNode" />
               <item name="Actions" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cootza" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="AdvertisementOffers" type="462c0819:PsiDirectoryNode" />
+              <item name="Domain" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cootza" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="AdvertisementOffers" type="462c0819:PsiDirectoryNode" />
+              <item name="Domain" type="462c0819:PsiDirectoryNode" />
+              <item name="Requests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cootza" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cootza" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Feature" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cootza" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Feature" type="462c0819:PsiDirectoryNode" />
+              <item name="AdvertisementOffers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cootza" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Feature" type="462c0819:PsiDirectoryNode" />
+              <item name="Advertisements" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cootza" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Setup" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cootza" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Unit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cootza" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Unit" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cootza" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Unit" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cootza" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cootza" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+              <item name="Unit" type="462c0819:PsiDirectoryNode" />
+              <item name="Models" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -375,7 +445,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/app/App/Auth/Responders" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server/app/App/AdvertisementOffers/Domain/Requests" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -384,18 +454,18 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\cootza\server\app\App\AdvertisementOffers\Domain" />
       <recent name="C:\xampp\htdocs\cootza\server\app\App\AdOffer\Domain\Models" />
       <recent name="C:\xampp\htdocs\cootza\server\app\App\AdOffer" />
       <recent name="C:\xampp\htdocs\cootza\server\app\App\Auth\Actions" />
       <recent name="C:\xampp\htdocs\cootza\server\tests\Unit" />
-      <recent name="C:\xampp\htdocs\cootza\server\app\Generic\Domain\Models" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\cootza\server\app\App\AdvertisementOffers\Domain\Requests" />
       <recent name="C:\xampp\htdocs\cootza\server\app\App\Auth\Responders" />
       <recent name="C:\xampp\htdocs\cootza\server\tests\Feature\Auth" />
       <recent name="C:\xampp\htdocs\cootza\server\app\App\Auth\Domain\Services" />
       <recent name="C:\xampp\htdocs\cootza\server\app\App\Auth\Domain\Requests" />
-      <recent name="C:\xampp\htdocs\cootza\client\assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -437,18 +507,18 @@
       <workItem from="1562770548622" duration="13757000" />
       <workItem from="1562788236927" duration="3807000" />
       <workItem from="1562832029429" duration="33978000" />
-      <workItem from="1562923909832" duration="6323000" />
+      <workItem from="1562923909832" duration="15935000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124314000" />
+    <option name="totallyTimeSpent" value="133926000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1296" height="1010" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.26640624" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2828125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -465,7 +535,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.22222222" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.42244226" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -481,7 +551,7 @@
       <window_info anchor="right" id="Capture Analysis" order="10" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26640624" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2828125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -498,7 +568,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.22222222" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.42244226" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Flutter Performance" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -518,122 +588,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/server/app/App/Auth/Domain/Requests/UserLoginFormRequest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-558">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/tests/Setup/UserFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/tests/Feature/Auth/UserRegisterTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="77" column="36" lean-forward="true" selection-start-line="77" selection-start-column="36" selection-end-line="77" selection-end-column="36" />
-          <folding>
-            <element signature="e#38#73#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="3" column="14" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/vendor/laravel/framework/src/Illuminate/Foundation/Testing/Concerns/MakesHttpRequests.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="305" column="24" selection-start-line="305" selection-start-column="20" selection-end-line="305" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/App/Auth/Actions/MeAction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#40#94#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/tests/Feature/Auth/UserLoginTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="66" column="5" lean-forward="true" selection-start-line="66" selection-start-column="5" selection-end-line="66" selection-end-column="5" />
-          <folding>
-            <element signature="e#38#73#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/vendor/laravel/framework/src/Illuminate/Foundation/Testing/TestCase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/tests/TestCase.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#25#75#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/tests/Feature/Auth/MeTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="18" column="53" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://E:/Work/myApps/inProgress/cootza/client/node_modules/esm/esm.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/App/Auth/Actions/UserLoginAction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="18" column="35" lean-forward="true" selection-end-line="27" />
-          <folding>
-            <element signature="e#40#94#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/App/Auth/Domain/Services/UserLoginService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="9" column="5" lean-forward="true" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/App/Auth/Responders/UserLoginResponder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/App/Auth/Responders/UserLogoutResponder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/app/App/Auth/Actions/UserLogoutAction.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -731,13 +685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/storage/framework/cache/facade-483384d6a70717c540736afdc1a9711c1b8b5ad5.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/pages/index.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1953">
@@ -752,20 +699,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/App/AdvertisementOffer/Actions/MakeAdvertisementOfferAction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/tests/CreatesApplication.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/tests/Feature/AdOffer/AdOfferTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
@@ -776,105 +709,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/api.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="26" column="7" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/Generic/Domain/Models/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="274">
-          <caret line="64" lean-forward="true" selection-start-line="64" selection-end-line="64" />
-          <folding>
-            <element signature="e#45#109#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/vendor/laravel/framework/src/Illuminate/Database/Schema/ForeignKeyDefinition.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="217">
           <caret line="7" column="3" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/database/factories/AdvertisementFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/App/AdvertisementOffer/Domain/Models/AdvertisementOffer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/tests/Setup/AdvertisementFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="12" column="5" lean-forward="true" selection-start-line="12" selection-start-column="5" selection-end-line="12" selection-end-column="5" />
-          <folding>
-            <element signature="e#31#86#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/database/factories/AdvertsiementOfferFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="8" column="12" lean-forward="true" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/database/migrations/2019_07_12_093413_create_advertisement_offers_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Domain/Models/Advertisement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-          <folding>
-            <element signature="e#56#120#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/tests/Setup/AdvertisementOfferFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="35" column="49" lean-forward="true" selection-start-line="35" selection-start-column="49" selection-end-line="35" selection-end-column="49" />
-          <folding>
-            <element signature="e#31#104#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/tests/Unit/Generic/Domain/Models/UserTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-237">
-          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
-          <folding>
-            <element signature="e#52#116#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/tests/Unit/App/Advertisements/Domain/Models/AdvertisementTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="370">
-          <caret line="35" column="8" lean-forward="true" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
-          <folding>
-            <element signature="e#52#116#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -888,13 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/tests/Setup/CategoryFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="8" column="33" lean-forward="true" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/app/App/Categories/Domain/Services/CategoryIndexService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="403">
@@ -905,9 +736,219 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/App/Categories/Responders/CategoryIndexResponder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/tests/Setup/CategoryFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Domain/Scoping/Scopes/CategoryScope.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="496">
+          <caret line="16" column="21" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+          <folding>
+            <element signature="e#64#122#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Domain/Services/AdvertisementIndexService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="e#58#129#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Actions/AdvertisementShowAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="18" column="38" lean-forward="true" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
+          <folding>
+            <element signature="e#50#116#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/tests/CreatesApplication.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/uncompleted.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="31">
+          <caret line="1" column="15" lean-forward="true" selection-start-line="1" selection-start-column="15" selection-end-line="1" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/tests/Unit/App/Advertisements/Domain/Models/AdvertisementTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="9" column="40" lean-forward="true" selection-start-line="9" selection-start-column="40" selection-end-line="9" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/tests/Setup/UserFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Domain/Models/Advertisement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/tests/Feature/Advertisements/AdvertisementIndexTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="8" column="6" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/App/Auth/Actions/MeAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="19" column="28" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/vendor/symfony/http-foundation/Response.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-403">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="15" selection-end-line="27" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/storage/framework/cache/facade-483384d6a70717c540736afdc1a9711c1b8b5ad5.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/App/AdvertisementOffers/Domain/Models/AdvertisementOffer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/database/factories/AdvertisementFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="11" column="9" lean-forward="true" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/database/factories/AdvertsiementOfferFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="2" column="57" lean-forward="true" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/api.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/tests/Unit/Generic/Domain/Models/UserTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="43" column="24" selection-start-line="43" selection-start-column="24" selection-end-line="43" selection-end-column="24" />
+          <folding>
+            <element signature="e#52#117#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/Generic/Domain/Models/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="70" lean-forward="true" selection-start-line="70" selection-end-line="70" />
+          <folding>
+            <element signature="e#45#110#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/database/migrations/2019_07_12_093413_create_advertisement_offers_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="82">
+          <caret line="17" column="39" lean-forward="true" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/tests/Setup/AdvertisementFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="76" column="71" lean-forward="true" selection-start-line="76" selection-start-column="71" selection-end-line="76" selection-end-column="71" />
+          <folding>
+            <element signature="e#31#86#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Domain/Resources/AdvertisementIndexResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Responders/AdvertisementIndexResponder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Domain/Resources/AdvertisementResource.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="124">
+          <caret line="4" column="6" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/tests/Setup/AdvertisementOfferFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1769">
+          <caret line="82" column="40" selection-start-line="82" selection-start-column="20" selection-end-line="82" selection-end-column="40" />
+          <folding>
+            <element signature="e#31#105#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/app/App/Categories/Actions/CategoryIndexAction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="278">
+        <state relative-caret-position="341">
           <caret line="12" column="72" selection-start-line="12" selection-start-column="72" selection-end-line="12" selection-end-column="72" />
           <folding>
             <element signature="e#46#106#0#PHP" expanded="true" />
@@ -915,10 +956,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/app/App/Categories/Responders/CategoryIndexResponder.php">
+    <entry file="file://$PROJECT_DIR$/server/app/App/Advertisements/Actions/AdvertisementIndexAction.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+        <state relative-caret-position="31">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#50#119#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/tests/Feature/AdvertisementOffers/StoreAdvertisementOfferTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+          <folding>
+            <element signature="e#54#99#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/App/AdvertisementOffers/Domain/Requests/AdvertisementOfferStoreRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/app/App/AdvertisementOffers/Actions/StoreAdvertisementOfferAction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="279">
+          <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="e#55#110#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
