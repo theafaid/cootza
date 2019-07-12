@@ -48,6 +48,6 @@ class Advertisement extends Model
 
     public function offers()
     {
-        return $this->hasMany(AdvertisementOffer::class);
+        return $this->hasMany(AdvertisementOffer::class, 'provided_to', 'id');
     }
 }

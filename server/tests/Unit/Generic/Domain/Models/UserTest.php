@@ -2,11 +2,13 @@
 
 namespace Tests\Unit\Generic\Domain\Models;
 
+use App\App\AdvertisementOffer\Domain\Models\AdvertisementOffer;
 use App\App\Advertisements\Domain\Models\Advertisement;
 use App\Generic\Domain\Models\User;
 use Facades\Tests\Setup\AdvertisementFactory;
+use Facades\Tests\Setup\AdvertisementOfferFactory;
 use Facades\Tests\Setup\UserFactory;
-use Illuminate\Support\Collection;
+use Illuminate\Database\Eloquent\Collection;
 use Tests\TestCase;
 
 class UserTest extends TestCase
@@ -29,5 +31,19 @@ class UserTest extends TestCase
         $this->assertInstanceOf(Collection::class, $user->advertisements);
 
         $this->assertInstanceOf(Advertisement::class, $user->advertisements->random());
+    }
+
+    /** @test */
+    function it_has_offers()
+    {
+        $user = UserFactory::create();
+
+        $userAdvertisement  = AdvertisementFactory::ownedBy($user)->create();
+
+        AdvertisementOfferFactory::assignedTo($userAdvertisement)
+            ->offeredBy($user)->create(2);
+
+        $this->assertInstanceOf(Collection::class, $user->offers);
+        $this->assertInstanceOf(AdvertisementOffer::class, $user->offers->random());
     }
 }
