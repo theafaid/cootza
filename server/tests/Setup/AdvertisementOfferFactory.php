@@ -76,13 +76,13 @@ class AdvertisementOfferFactory
     protected function getOfferContent()
     {
         return json_encode(
-            $this->offerContent ?: $this->generateFakeOfferContent()
+            $this->offerContent ?: $this->generateOfferContent()
         );
     }
 
-    public function generateFakeOfferContent()
+    public function generateOfferContent($advertisements = null)
     {
-        $advertisements = AdvertisementFactory::create(2);
+        $advertisements = $advertisements ?: AdvertisementFactory::create(2);
 
         $data['advertisements'] = [];
 

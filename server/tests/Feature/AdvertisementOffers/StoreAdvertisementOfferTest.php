@@ -25,7 +25,7 @@ class StoreAdvertisementOfferTest extends TestCase
 
         $userAdvertisements = AdvertisementFactory::ownedBy($user)->create(2);
 
-        $offerContent = AdvertisementOfferFactory::generateFakeOfferContent();
+        $offerContent = AdvertisementOfferFactory::generateOfferContent();
 
         $response = $this->jsonAs(
             $user,
@@ -36,4 +36,41 @@ class StoreAdvertisementOfferTest extends TestCase
 
         $response->assertStatus(403);
     }
+
+
+    /** @test */
+    function it_fails_if_user_has_provided_an_offer_to_selected_advertisement_before()
+    {
+        $user = UserFactory::create();
+
+        $userAdvertisements = AdvertisementFactory::ownedBy($user)->create(3);
+
+        $otherAdvertisement= AdvertisementFactory::ownedBy(UserFactory::create())->create();
+
+        $response = $this->jsonAs(
+            $user, 'POST', route('advertisement.offers', $otherAdvertisement->slug),[
+                'offer' => $offerContent = AdvertisementOfferFactory::generateOfferContent($userAdvertisements)
+            ]
+        );
+
+        $response->assertStatus(201);
+
+        $this->assertNotNull($otherAdvertisement->offers);
+
+        $this->assertEquals(json_encode($offerContent), $otherAdvertisement->offers->first()->content);
+    }
+
+
+    //    /** @test */
+//    function a_user_can_make_an_offer_provided_to_an_advertisement()
+//    {
+//        $user = UserFactory::create();
+//
+//        $userAdvertisements = AdvertisementFactory::ownedBy($user)->create(3);
+//
+//        $this->jsonAs(
+//            $use
+//        )
+//    }
+
 }

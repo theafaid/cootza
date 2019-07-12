@@ -10,12 +10,12 @@ class StoreAdvertisementOfferAction
     {
        if($advertisement->owner->is(auth()->user())) return response([], 403);
 
-       dd(request()->all());
-
        $advertisement->offers()->create([
-           'offered_by' => auth()->id(),
-
+           'provided_by' => auth()->id(),
+           'content' => json_encode(request('offer'))
        ]);
+
+       return response([], 201);
     }
 }
 
