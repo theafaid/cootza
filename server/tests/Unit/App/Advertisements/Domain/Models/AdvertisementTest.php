@@ -2,7 +2,7 @@
 
 namespace Tests\Unit\App\Ads\Domain\Models;
 
-use App\App\AdvertisementOffer\Domain\Models\AdvertisementOffer;
+use App\App\AdvertisementOffers\Domain\Models\AdvertisementOffer;
 use Facades\Tests\Setup\AdvertisementOfferFactory;
 use App\App\Categories\Domain\Models\Category;
 use Facades\Tests\Setup\AdvertisementFactory;

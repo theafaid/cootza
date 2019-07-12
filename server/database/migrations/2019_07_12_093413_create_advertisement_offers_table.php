@@ -16,12 +16,12 @@ class CreateAdvertisementOffersTable extends Migration
         Schema::create('advertisement_offers', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->unsignedBigInteger('provided_to');
-            $table->text('offer');
-            $table->unsignedBigInteger('offered_by');
+            $table->text('content');
+            $table->unsignedBigInteger('provided_by');
             $table->boolean('swap_approved')->default(false);
             $table->timestamps();
 
-            $table->foreign('offered_by')->references('id')
+            $table->foreign('provided_by')->references('id')
                 ->on('users')->onDelete('cascade');
 
             $table->foreign('provided_to')->references('id')

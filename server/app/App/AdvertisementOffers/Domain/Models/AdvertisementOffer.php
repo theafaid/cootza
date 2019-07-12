@@ -1,12 +1,12 @@
 <?php
 
-namespace App\App\AdvertisementOffer\Domain\Models;
+namespace App\App\AdvertisementOffers\Domain\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
 class AdvertisementOffer extends Model
 {
     protected $fillable = [
-        'provided_to', 'offered_by', 'offer', 'swap_approved'
+        'provided_to', 'provided_by', 'content', 'swap_approved'
     ];
 }

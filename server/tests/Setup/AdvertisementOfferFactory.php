@@ -2,14 +2,17 @@
 
 namespace Tests\Setup;
 
-use App\App\AdvertisementOffer\Domain\Models\AdvertisementOffer as Offer;
+use App\App\AdvertisementOffers\Domain\Models\AdvertisementOffer as Offer;
 use App\App\Advertisements\Domain\Models\Advertisement;
-use App\Generic\Domain\Models\User;
 use Facades\Tests\Setup\UserFactory;
+use Facades\Tests\Setup\AdvertisementFactory;
+use App\Generic\Domain\Models\User;
 
 class AdvertisementOfferFactory
 {
-    protected $advertisement = null, $presenter = null;
+    protected $advertisement = null;
+    protected $provider = null;
+    protected $offerContent = [];
 
     public function assignedTo(Advertisement $advertisement)
     {
@@ -18,9 +21,24 @@ class AdvertisementOfferFactory
         return $this;
     }
 
-    public function offeredBy(User $presenter)
+    public function providedBy(User $provider)
     {
-        $this->presenter = $presenter;
+        $this->provider = $provider;
+
+        return $this;
+    }
+
+    public function withContent($advertisements = [], $price = null)
+    {
+        foreach($advertisements as $advertisement){
+            array_push($this->offerContent['advertisements'], [
+                'title' => $advertisement->title,
+                'slug'  => $advertisement->slug,
+                'main_image' => null
+            ]);
+        }
+
+        $this->offerContent['additional_money'] = $price;
 
         return $this;
     }
@@ -29,7 +47,8 @@ class AdvertisementOfferFactory
     {
         return factory(Offer::class, $count)->create([
             'provided_to'      => $this->getAssignedAdvertisement(),
-            'offered_by'       => $this->getOfferPresenter()
+            'provided_by'      => $this->getOfferProvider(),
+            'content'          => $this->getOfferContent()
         ]);
     }
 
@@ -38,19 +57,46 @@ class AdvertisementOfferFactory
         return $this->advertisement ? $this->advertisement->id : AdvertisementFactory::create();
     }
 
-    protected function getOfferPresenter()
+    protected function getOfferProvider()
     {
-        if(! $this->presenter){
-            // By logic, when providing an advertisement without providing a presenter
-            // the presenter will be the advertisement owner
+        if(! $this->provider){
+            // By logic, when providing an advertisement without providing a provider
+            // the provider will be the advertisement owner
             if($this->advertisement) return $this->advertisement->owner->id;
 
             // When no advertisement also this means 100% no logic
             // because the offer which provided to the advertisement will has advertisement with owner
-            // and the presenter will be different with the advertisement owner
+            // and the provider will be different with the advertisement owner
             return UserFactory::create();
         }
 
-        return $this->presenter->id;
+        return $this->provider->id;
+    }
+
+    protected function getOfferContent()
+    {
+        return json_encode(
+            $this->offerContent ?: $this->generateFakeOfferContent()
+        );
+    }
+
+    public function generateFakeOfferContent()
+    {
+        $advertisements = AdvertisementFactory::create(2);
+
+        $data['advertisements'] = [];
+
+        foreach($advertisements as $advertisement){
+            array_push($data['advertisements'], [
+                    'title' => $advertisement->title,
+                    'slug'  => $advertisement->slug,
+                    'main_image' => null,
+                ]
+            );
+        }
+
+        $data['additional_money'] = '100';
+
+        return $data;
     }
 }

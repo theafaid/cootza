@@ -10,7 +10,6 @@ class AdvertisementFactory
 {
     protected $preferredSwapWith;
     protected $owner ;
-    protected $offersCount = null;
 
     /**
      * @param $category

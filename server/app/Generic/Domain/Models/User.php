@@ -2,7 +2,7 @@
 
 namespace App\Generic\Domain\Models;
 
-use App\App\AdvertisementOffer\Domain\Models\AdvertisementOffer;
+use App\App\AdvertisementOffers\Domain\Models\AdvertisementOffer;
 use App\App\Advertisements\Domain\Models\Advertisement;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
@@ -65,6 +65,6 @@ class User extends Authenticatable implements JWTSubject
 
     public function offers()
     {
-        return $this->hasMany(AdvertisementOffer::class, 'offered_by', 'id');
+        return $this->hasMany(AdvertisementOffer::class, 'provided_by', 'id');
     }
 }

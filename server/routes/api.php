@@ -26,7 +26,10 @@ Route::group(['middleware' => 'auth:api'], function() {
         Route::post('logout', \App\App\Auth\Actions\UserLogoutAction::class)->name('logout');
     });
 
-//    Route::post('ads/{advertisement}/offer', )
+    Route::post(
+        'ads/{advertisement}/offer',
+        \App\App\AdvertisementOffers\Actions\StoreAdvertisementOfferAction::class
+    )->name('advertisement.offers');
 });
 
 

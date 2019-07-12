@@ -2,7 +2,7 @@
 
 namespace App\App\Advertisements\Domain\Models;
 
-use App\App\AdvertisementOffer\Domain\Models\AdvertisementOffer;
+use App\App\AdvertisementOffers\Domain\Models\AdvertisementOffer;
 use App\App\Advertisements\Domain\Scoping\Scoper;
 use App\App\Categories\Domain\Models\Category;
 use App\Generic\Domain\Models\User;
