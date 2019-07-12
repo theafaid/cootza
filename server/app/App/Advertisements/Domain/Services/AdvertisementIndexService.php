@@ -10,11 +10,18 @@ class AdvertisementIndexService
 {
     protected $advertisement;
 
+    /**
+     * AdvertisementIndexService constructor.
+     * @param AdvertisementRepository $advertisement
+     */
     public function __construct(AdvertisementRepository $advertisement)
     {
         $this->advertisement = $advertisement;
     }
 
+    /**
+     * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
+     */
     public function handle()
     {
         return AdvertisementIndexResource::collection(
@@ -22,6 +29,9 @@ class AdvertisementIndexService
         );
     }
 
+    /**
+     * @return array
+     */
     protected function scopes()
     {
         return [

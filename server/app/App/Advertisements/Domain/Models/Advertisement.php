@@ -21,31 +21,51 @@ class Advertisement extends Model
 
     protected $with = ['category'];
 
+    /**
+     * @return string
+     */
     public function getRouteKeyName()
     {
         return "slug";
     }
 
+    /**
+     * @param Builder $builder
+     * @param array $scopes
+     * @return Builder
+     */
     public function scopeWithScopes(Builder $builder, $scopes = [])
     {
         return (new Scoper(request()))->apply($builder, $scopes);
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
     public function owner()
     {
         return $this->belongsTo(User::class, 'user_id', 'id');
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
     public function category()
     {
         return $this->belongsTo(Category::class);
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+     */
     public function preferredCategoryToSwapWith()
     {
         return $this->belongsTo(Category::class, 'preferably_swap_with', 'id');
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
     public function offers()
     {
         return $this->hasMany(AdvertisementOffer::class, 'provided_to', 'id');

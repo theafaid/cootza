@@ -10,11 +10,19 @@ class AdvertisementShowAction
 {
     protected $responder;
 
+    /**
+     * AdvertisementShowAction constructor.
+     * @param AdvertisementShowResponder $responder
+     */
     public function __construct(AdvertisementShowResponder $responder)
     {
         $this->responder = $responder;
     }
 
+    /**
+     * @param Advertisement $advertisement
+     * @return mixed
+     */
     public function __invoke(Advertisement $advertisement)
     {
         return $this->responder->respond(

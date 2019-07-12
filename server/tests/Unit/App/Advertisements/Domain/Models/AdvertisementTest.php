@@ -56,8 +56,16 @@ class AdvertisementTest extends TestCase
 
         AdvertisementOfferFactory::assignedTo($advertisement)->create(2);
 
-        $this->assertInstanceOf(Collection::class, $advertisement->offers);
+        $this->assertInstanceOf
+        (
+            Collection::class,
+            $advertisement->offers
+        );
 
-        $this->assertInstanceOf(AdvertisementOffer::class, $advertisement->offers->random());
+        $this->assertInstanceOf
+        (
+            AdvertisementOffer::class,
+            $advertisement->offers->random()
+        );
     }
 }
