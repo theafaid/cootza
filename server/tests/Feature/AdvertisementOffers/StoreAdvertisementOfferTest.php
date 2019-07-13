@@ -2,9 +2,9 @@
 
 namespace Tests\Features\AdvertisementOffers;
 
+use Facades\Tests\Setup\AdvertisementOfferFactory;
 use Facades\Tests\Setup\AdvertisementFactory;
 use Facades\Tests\Setup\UserFactory;
-use Facades\Tests\Setup\AdvertisementOfferFactory;
 use Tests\TestCase;
 
 class StoreAdvertisementOfferTest extends TestCase
@@ -19,57 +19,60 @@ class StoreAdvertisementOfferTest extends TestCase
     }
 
     /** @test */
-    function it_fails_if_the_offer_provider_wants_to_swap_with_his_own_advertisement()
+    function it_fails_when_provider_make_an_offer_to_his_own_advertisement()
     {
-        $user = UserFactory::create();
-
-        $userAdvertisements = AdvertisementFactory::ownedBy($user)->create(2);
-
-        $response = $this->jsonAs(
-            $user,
-            'POST',
-            route('advertisement.offers', $userAdvertisements[0]), [
-                'offer' => ['advertisements' => $userAdvertisements->pluck('id'), 'money' => 100]
-            ]
-        );
-
-        $response->assertStatus(403);
+        $this->endPoint(
+            $user = UserFactory::create(),
+            $userAdvertisements = AdvertisementFactory::ownedBy($user)->create(2),
+            100,
+            $userAdvertisements[0]
+        )->assertStatus(403);
     }
 
     /** @test */
     function it_requires_a_money_if_no_advertisement_provided_for_the_offer()
     {
-        $user = UserFactory::create();
 
-        $otherAdvertisement = AdvertisementFactory::ownedBy(UserFactory::create())->create();
-
-        $response = $this->jsonAs(
-            $user,
-            'POST',
-            route('advertisement.offers', $otherAdvertisement->slug),
-            ['offer' => ['advertisements' => [], 'money' => null]]
-        );
-
-        $response->assertJsonValidationErrors(['offer.advertisements', 'offer.money']);
-
-        $response->assertStatus(422);
+        $this->endPoint($user = UserFactory::create(), [],null)
+            ->assertStatus(422)
+            ->assertJsonValidationErrors(['offer.advertisements', 'offer.money']);
 
     }
 
     /** @test */
     function selected_advertisements_for_offer_cannot_be_duplicated()
     {
-
         $user = UserFactory::create();
+        $userAdvertisement = AdvertisementFactory::ownedBy($user)->create();
 
-        $userAdvertisements = AdvertisementFactory::ownedBy($user)->create(3);
+        $this->endPoint($user, [$userAdvertisement, $userAdvertisement], 100)
+            ->assertJsonValidationErrors(['offer.advertisements.0'])
+            ->assertStatus(422);
+    }
 
+    /** @test */
+    function advertisements_and_money_keys_for_offer_must_be_presented()
+    {
+        $user = UserFactory::create();
         $otherAdvertisement = AdvertisementFactory::ownedBy(UserFactory::create())->create();
 
-        $response = $this->jsonAs(
-            $user, 'POST', route('advertisement.offers', $otherAdvertisement->slug), [
-                'offer' => ['advertisements' => [$userAdvertisements[0]->id, $userAdvertisements[0]->id], 'money' => 100]
-            ]
+        $this->jsonAs( $user,'POST', route('advertisement.offers', $otherAdvertisement->slug), [] )
+            ->assertStatus(422)
+            ->assertJsonValidationErrors(['offer.advertisements', 'offer.money']);
+    }
+
+    /** @test */
+    function it_failes_when_offer_provider_make_offer_with_advertisements_not_owned_by_him()
+    {
+        $user = UserFactory::create();
+        $advertisementOwnedByOtherUser = AdvertisementFactory::ownedBy(UserFactory::create())->create();
+        $otherAdvertisement = AdvertisementFactory::ownedBy(UserFactory::create())->create();
+
+        $response = $this->endPoint(
+            $user,
+            [$advertisementOwnedByOtherUser],
+            100,
+            $otherAdvertisement
         );
 
         $response->assertJsonValidationErrors(['offer.advertisements.0']);
@@ -77,77 +80,28 @@ class StoreAdvertisementOfferTest extends TestCase
     }
 
     /** @test */
-    function advertisements_and_money_keys_for_offer_must_be_presented()
+    function it_requires_at_least_one_of_money_currency()
     {
-        $user = UserFactory::create();
-
-        $otherAdvertisement = AdvertisementFactory::ownedBy(UserFactory::create())->create();
-
-        $response = $this->jsonAs(
-            $user,
-            'POST',
-            route('advertisement.offers', $otherAdvertisement->slug), []
-        );
-
-        $response->assertJsonValidationErrors(['offer.advertisements', 'offer.money']);
-
-        $response->assertStatus(422);
-
-    }
-
-    /** @test */
-    function it_requires_a_valid_offer_with_advertisements_owned_by_provider()
-    {
-        $user = UserFactory::create();
-        $advertisementOwnedByOtherUser = AdvertisementFactory::ownedBy(UserFactory::create())->create();
-        $otherAdvertisement = AdvertisementFactory::ownedBy(UserFactory::create())->create();
-
-        $response = $this->jsonAs(
-            $user, 'POST', route('advertisement.offers', $otherAdvertisement->slug), [
-                'offer' => ['advertisements' => [$advertisementOwnedByOtherUser->id], 'money' => 100]
-            ]
-        );
-        $this->assertEquals(json_encode(['advertisements' => [], 'money' => 100]), $otherAdvertisement->offers->first()->content);
-        $response->assertStatus(201);
-    }
-
-    /** @test */
-    function it_request_at_one_of_currency_for_money()
-    {
-        $user = UserFactory::create();
-
-        $userAdvertisements = AdvertisementFactory::ownedBy($user)->create(3);
-
-        $otherAdvertisement = AdvertisementFactory::ownedBy(UserFactory::create())->create();
-
-        $response = $this->jsonAs(
-            $user, 'POST', route('advertisement.offers', $otherAdvertisement->slug), [
-                'offer' => ['advertisements' => $userAdvertisements->pluck('id'), 'money' => 0]
-            ]
-        );
-
-        $response->assertJsonValidationErrors(['offer.money']);
-        $response->assertStatus(422);
+        $this->endPoint(
+            $user = UserFactory::create(),
+            AdvertisementFactory::ownedBy($user)->create(2),
+            0
+        )
+            ->assertJsonValidationErrors(['offer.money'])
+            ->assertStatus(422);
     }
 
 
     /** @test */
     function a_user_can_make_an_offer_provided_to_an_advertisement()
     {
-        $this->withoutExceptionHandling();
-        $user = UserFactory::create();
+        $this->endPoint(
+            $user = UserFactory::create(),
+            $userAdvertisements = AdvertisementFactory::ownedBy($user)->create(3),
+            100,
+            $otherAdvertisement = AdvertisementFactory::ownedBy(UserFactory::create())->create()
 
-        $userAdvertisements = AdvertisementFactory::ownedBy($user)->create(3);
-
-        $otherAdvertisement = AdvertisementFactory::ownedBy(UserFactory::create())->create();
-
-        $response = $this->jsonAs(
-            $user, 'POST', route('advertisement.offers', $otherAdvertisement->slug), [
-                'offer' => ['advertisements' => $userAdvertisements->pluck('id'), 'money' => 100]
-            ]
-        );
-
-        $response->assertStatus(201);
+        )->assertStatus(201);
 
         $this->assertNotNull($otherAdvertisement->offers);
 
@@ -160,19 +114,13 @@ class StoreAdvertisementOfferTest extends TestCase
     /** @test */
     function a_user_can_make_an_offer_with_advertisements_only()
     {
-        $user = UserFactory::create();
+        $this->endPoint(
+            $user = UserFactory::create(),
+            $userAdvertisements = AdvertisementFactory::ownedBy($user)->create(3),
+            null,
+            $otherAdvertisement = AdvertisementFactory::ownedBy(UserFactory::create())->create()
 
-        $userAdvertisements = AdvertisementFactory::ownedBy($user)->create(3);
-
-        $otherAdvertisement = AdvertisementFactory::ownedBy(UserFactory::create())->create();
-
-        $response = $this->jsonAs(
-            $user, 'POST', route('advertisement.offers', $otherAdvertisement->slug), [
-                'offer' => ['advertisements' => $userAdvertisements->pluck('id'), 'money' => null]
-            ]
-        );
-
-        $response->assertStatus(201);
+        )->assertStatus(201);
 
         $this->assertNotNull($otherAdvertisement->offers);
 
@@ -183,27 +131,40 @@ class StoreAdvertisementOfferTest extends TestCase
     }
 
     /** @test */
-    function a_user_can_make_an_offer_with_money()
+    function a_user_can_make_an_offer_with_money_only()
     {
-        $user = UserFactory::create();
+        $this->endPoint(
+            $user = UserFactory::create(),
+            null,
+            100,
+            $otherAdvertisement = AdvertisementFactory::ownedBy(UserFactory::create())->create()
 
-        $userAdvertisements = AdvertisementFactory::ownedBy($user)->create(3);
-
-        $otherAdvertisement = AdvertisementFactory::ownedBy(UserFactory::create())->create();
-
-        $response = $this->jsonAs(
-            $user, 'POST', route('advertisement.offers', $otherAdvertisement->slug), [
-                'offer' => ['advertisements' => [], 'money' => 100]
-            ]
-        );
-
-        $response->assertStatus(201);
+        )->assertStatus(201);
 
         $this->assertNotNull($otherAdvertisement->offers);
 
         $this->assertEquals(
-            json_encode(AdvertisementOfferFactory::generateOfferContent(null, 100)),
-            $otherAdvertisement->offers->first()->content
+            json_encode(
+                AdvertisementOfferFactory::generateOfferContent([], 100)),
+                $otherAdvertisement->offers->first()->content
+            );
+    }
+
+    function endPoint($user, $advertisements = null, $money = null, $providedTo = null )
+    {
+
+        $providedTo = $providedTo ?
+            $providedTo->slug : AdvertisementFactory::ownedBy(UserFactory::create())->create()->slug;
+
+        return $this->jsonAs(
+            $user,
+            'POST',
+            route('advertisement.offers', $providedTo), [
+                'offer' => [
+                    'advertisements' => count(collect($advertisements)) ? collect($advertisements)->pluck('id') : [],
+                    'money' => $money
+                ]
+            ]
         );
     }
 }

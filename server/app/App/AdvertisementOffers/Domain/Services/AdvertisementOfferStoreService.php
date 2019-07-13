@@ -6,13 +6,13 @@ use App\App\Advertisements\Domain\Models\Advertisement;
 
 class AdvertisementOfferStoreService
 {
+    protected $advertisementStoredAttributes = ['id', 'slug', 'title', 'main_image'];
+
     public function handle($advertisement, $offer)
     {
-       $content = $this->getOfferContent($offer);
-
         $advertisement->offers()->create([
             'provided_by' => auth()->id(),
-            'content' => json_encode($content)
+            'content' => json_encode($this->getOfferContent($offer))
         ]);
 
         return response([], 201);
@@ -23,10 +23,7 @@ class AdvertisementOfferStoreService
         $content = [];
 
         if(count($offer['advertisements'])){
-
-            $content['advertisements'] = $this->offerAdvertisementStoredContent(
-              $this->providedAdvertisementsForOffer($offer['advertisements'])
-            );
+            $content['advertisements'] = $this->getAdvertisementsContent($offer['advertisements']);
 
         }else{
             $content['advertisements'] = [];
@@ -37,37 +34,15 @@ class AdvertisementOfferStoreService
         return $content;
     }
 
-    protected function providedAdvertisementsForOffer($advertisementsIds)
+    protected function getAdvertisementsContent($advertisementsIds)
     {
-        $advertisements = collect($advertisementsIds)->map(function ($advertisementId) {
 
-            return Advertisement::find($advertisementId);
+        return collect($advertisementsIds)->map(function ($advertisementId) {
 
-        })->filter(function ($advertisement) {
-
-            return $advertisement->ownedBy(auth()->user());
-
+            return Advertisement::whereId($advertisementId)
+                ->first()
+                ->only(['id', 'title', 'slug', 'main_image']);
         });
 
-        return $advertisements;
-
-    }
-
-    protected function offerAdvertisementStoredContent($providedAdvertisements)
-    {
-        $content = [];
-
-        foreach($providedAdvertisements as $advertisement){
-
-            array_push($content, [
-                'id' => $advertisement->id,
-                'title' => $advertisement->title,
-                'slug' => $advertisement->slug,
-                'main_image' => null
-            ]);
-
-        }
-
-        return $content;
     }
 }

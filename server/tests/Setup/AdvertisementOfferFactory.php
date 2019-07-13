@@ -90,7 +90,7 @@ class AdvertisementOfferFactory
                         'id' => $advertisement->id,
                         'title' => $advertisement->title,
                         'slug'  => $advertisement->slug,
-                        'main_image' => null,
+                        'main_image' => $advertisement->main_image,
                     ]
                 );
             }

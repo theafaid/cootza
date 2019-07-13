@@ -2,6 +2,7 @@
 
 namespace App\App\AdvertisementOffers\Domain\Requests;
 
+use App\App\AdvertisementOffers\Domain\Rules\AdvertisementOwner;
 use App\Generic\Domain\Requests\BaseFormRequest;
 use Illuminate\Validation\Rule;
 
@@ -30,7 +31,7 @@ class AdvertisementOfferStoreRequest extends BaseFormRequest
                 Rule::requiredIf(is_null($this['offer.money'])),'nullable', 'present', 'array'
             ],
 
-            'offer.advertisements.*' => ['nullable', 'numeric','distinct', 'exists:advertisements,id'],
+            'offer.advertisements.*' => ['nullable', 'numeric','distinct', new AdvertisementOwner(auth()->user())],
 
             'offer.money' => [
                 Rule::requiredIf(

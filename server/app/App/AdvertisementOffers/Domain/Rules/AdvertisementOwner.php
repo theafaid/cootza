@@ -27,7 +27,7 @@ class AdvertisementOwner implements Rule
      */
     public function passes($attribute, $value)
     {
-        return Advertisement::findOrFail($value)->ownedBy($this->user);
+        return Advertisement::find($value)->ownedBy($this->user);
     }
 
     /**
