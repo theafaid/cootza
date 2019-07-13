@@ -28,9 +28,9 @@ class AdvertisementOfferFactory
         return $this;
     }
 
-    public function withContent($advertisements = [], $price = null)
+    public function withContent($advertisements = [], $money = null)
     {
-        foreach($advertisements as $advertisement){
+        foreach(collect($advertisements) as $advertisement){
             array_push($this->offerContent['advertisements'], [
                 'title' => $advertisement->title,
                 'slug'  => $advertisement->slug,
@@ -38,7 +38,7 @@ class AdvertisementOfferFactory
             ]);
         }
 
-        $this->offerContent['money'] = $price;
+        $this->offerContent['money'] = $money;
 
         return $this;
     }
@@ -76,12 +76,14 @@ class AdvertisementOfferFactory
     protected function getOfferContent()
     {
         return json_encode(
-            $this->offerContent ?: $this->generateOfferContent()
+            $this->offerContent ?: $this->generateOfferContent([], null, $fake = true)
         );
     }
 
-    public function generateOfferContent($advertisements = null, $money = null)
+    public function generateOfferContent($advertisements = null, $money = null, $fake = false)
     {
+        $advertisements = $fake ? AdvertisementFactory::create(2) : $advertisements;
+
         if(! is_null($advertisements)){
             $data['advertisements'] = [];
 

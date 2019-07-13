@@ -16,7 +16,10 @@ class AdvertisementOfferStoreRequest extends BaseFormRequest
      */
     public function authorize()
     {
-        return ! $this->route('advertisement')->ownedBy(auth()->user());
+        $user = $this->user();
+        $advertisement = $this->route('advertisement');
+
+        return ! $advertisement->ownedBy($user) && ! $user->hasMadeOfferFor($advertisement);
     }
 
     /**

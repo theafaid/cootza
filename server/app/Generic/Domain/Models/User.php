@@ -67,4 +67,9 @@ class User extends Authenticatable implements JWTSubject
     {
         return $this->hasMany(AdvertisementOffer::class, 'provided_by', 'id');
     }
+
+    public function hasMadeOfferFor($advertisement)
+    {
+        return $this->offers()->where(['provided_to' => $advertisement->id])->exists();
+    }
 }

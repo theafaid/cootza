@@ -54,7 +54,7 @@
         userAds: [],
         offer: {
           advertisements: [311, 312],
-          money: null
+          money: 25000000
         }
       }
     },

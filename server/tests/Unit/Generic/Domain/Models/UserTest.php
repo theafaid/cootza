@@ -46,4 +46,16 @@ class UserTest extends TestCase
         $this->assertInstanceOf(Collection::class, $user->offers);
         $this->assertInstanceOf(AdvertisementOffer::class, $user->offers->random());
     }
+
+    /** @test */
+    function can_check_if_has_made_offer_for_an_advertisement_before()
+    {
+        $user = UserFactory::create();
+        $advertisement = AdvertisementFactory::ownedBy(UserFactory::create())->create();
+
+        AdvertisementOfferFactory::assignedTo($advertisement)
+            ->providedBy($user)->create();
+
+        $this->assertTrue($user->fresh()->hasMadeOfferFor($advertisement));
+    }
 }
