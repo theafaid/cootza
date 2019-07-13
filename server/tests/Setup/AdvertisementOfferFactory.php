@@ -80,23 +80,25 @@ class AdvertisementOfferFactory
         );
     }
 
-    public function generateOfferContent($advertisements = null)
+    public function generateOfferContent($advertisements = null, $money = null)
     {
-        $advertisements = $advertisements ?: AdvertisementFactory::create(2);
+        if(! is_null($advertisements)){
+            $data['advertisements'] = [];
 
-        $data['advertisements'] = [];
-
-        foreach($advertisements as $advertisement){
-            array_push($data['advertisements'], [
-                    'id' => $advertisement->id,
-                    'title' => $advertisement->title,
-                    'slug'  => $advertisement->slug,
-                    'main_image' => null,
-                ]
-            );
+            foreach($advertisements as $advertisement){
+                array_push($data['advertisements'], [
+                        'id' => $advertisement->id,
+                        'title' => $advertisement->title,
+                        'slug'  => $advertisement->slug,
+                        'main_image' => null,
+                    ]
+                );
+            }
+        }else{
+            $data['advertisements'] = [];
         }
 
-        $data['money'] = 100;
+        $data['money'] = $money;
 
         return $data;
     }

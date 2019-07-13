@@ -14,7 +14,7 @@ class StoreAdvertisementOfferTest extends TestCase
     {
         $advertisement = AdvertisementFactory::create();
 
-        $this->postJson(route('advertisement.offers', $advertisement ->slug), [])
+        $this->postJson(route('advertisement.offers', $advertisement->slug), [])
             ->assertStatus(401);
     }
 
@@ -64,10 +64,10 @@ class StoreAdvertisementOfferTest extends TestCase
 
         $userAdvertisements = AdvertisementFactory::ownedBy($user)->create(3);
 
-        $otherAdvertisement= AdvertisementFactory::ownedBy(UserFactory::create())->create();
+        $otherAdvertisement = AdvertisementFactory::ownedBy(UserFactory::create())->create();
 
         $response = $this->jsonAs(
-            $user, 'POST', route('advertisement.offers', $otherAdvertisement->slug),[
+            $user, 'POST', route('advertisement.offers', $otherAdvertisement->slug), [
                 'offer' => ['advertisements' => [$userAdvertisements[0]->id, $userAdvertisements[0]->id], 'money' => 100]
             ]
         );
@@ -86,7 +86,7 @@ class StoreAdvertisementOfferTest extends TestCase
         $response = $this->jsonAs(
             $user,
             'POST',
-            route('advertisement.offers', $otherAdvertisement->slug),[]
+            route('advertisement.offers', $otherAdvertisement->slug), []
         );
 
         $response->assertJsonValidationErrors(['offer.advertisements', 'offer.money']);
@@ -103,7 +103,7 @@ class StoreAdvertisementOfferTest extends TestCase
         $otherAdvertisement = AdvertisementFactory::ownedBy(UserFactory::create())->create();
 
         $response = $this->jsonAs(
-            $user, 'POST', route('advertisement.offers', $otherAdvertisement->slug),[
+            $user, 'POST', route('advertisement.offers', $otherAdvertisement->slug), [
                 'offer' => ['advertisements' => [$advertisementOwnedByOtherUser->id], 'money' => 100]
             ]
         );
@@ -118,10 +118,10 @@ class StoreAdvertisementOfferTest extends TestCase
 
         $userAdvertisements = AdvertisementFactory::ownedBy($user)->create(3);
 
-        $otherAdvertisement= AdvertisementFactory::ownedBy(UserFactory::create())->create();
+        $otherAdvertisement = AdvertisementFactory::ownedBy(UserFactory::create())->create();
 
         $response = $this->jsonAs(
-            $user, 'POST', route('advertisement.offers', $otherAdvertisement->slug),[
+            $user, 'POST', route('advertisement.offers', $otherAdvertisement->slug), [
                 'offer' => ['advertisements' => $userAdvertisements->pluck('id'), 'money' => 0]
             ]
         );
@@ -139,11 +139,36 @@ class StoreAdvertisementOfferTest extends TestCase
 
         $userAdvertisements = AdvertisementFactory::ownedBy($user)->create(3);
 
-        $otherAdvertisement= AdvertisementFactory::ownedBy(UserFactory::create())->create();
+        $otherAdvertisement = AdvertisementFactory::ownedBy(UserFactory::create())->create();
 
         $response = $this->jsonAs(
-            $user, 'POST', route('advertisement.offers', $otherAdvertisement->slug),[
+            $user, 'POST', route('advertisement.offers', $otherAdvertisement->slug), [
                 'offer' => ['advertisements' => $userAdvertisements->pluck('id'), 'money' => 100]
+            ]
+        );
+
+        $response->assertStatus(201);
+
+        $this->assertNotNull($otherAdvertisement->offers);
+
+        $this->assertEquals(
+            json_encode(AdvertisementOfferFactory::generateOfferContent($userAdvertisements, 100)),
+            $otherAdvertisement->offers->first()->content
+        );
+    }
+
+    /** @test */
+    function a_user_can_make_an_offer_with_advertisements_only()
+    {
+        $user = UserFactory::create();
+
+        $userAdvertisements = AdvertisementFactory::ownedBy($user)->create(3);
+
+        $otherAdvertisement = AdvertisementFactory::ownedBy(UserFactory::create())->create();
+
+        $response = $this->jsonAs(
+            $user, 'POST', route('advertisement.offers', $otherAdvertisement->slug), [
+                'offer' => ['advertisements' => $userAdvertisements->pluck('id'), 'money' => null]
             ]
         );
 
@@ -157,17 +182,28 @@ class StoreAdvertisementOfferTest extends TestCase
         );
     }
 
+    /** @test */
+    function a_user_can_make_an_offer_with_money()
+    {
+        $user = UserFactory::create();
 
-    //    /** @test */
-//    function a_user_can_make_an_offer_provided_to_an_advertisement()
-//    {
-//        $user = UserFactory::create();
-//
-//        $userAdvertisements = AdvertisementFactory::ownedBy($user)->create(3);
-//
-//        $this->jsonAs(
-//            $use
-//        )
-//    }
+        $userAdvertisements = AdvertisementFactory::ownedBy($user)->create(3);
 
+        $otherAdvertisement = AdvertisementFactory::ownedBy(UserFactory::create())->create();
+
+        $response = $this->jsonAs(
+            $user, 'POST', route('advertisement.offers', $otherAdvertisement->slug), [
+                'offer' => ['advertisements' => [], 'money' => 100]
+            ]
+        );
+
+        $response->assertStatus(201);
+
+        $this->assertNotNull($otherAdvertisement->offers);
+
+        $this->assertEquals(
+            json_encode(AdvertisementOfferFactory::generateOfferContent(null, 100)),
+            $otherAdvertisement->offers->first()->content
+        );
+    }
 }
