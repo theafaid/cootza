@@ -2,6 +2,8 @@
 
 namespace App\App\Advertisements\Domain\Resources;
 
+use App\App\Users\Domain\Resources\PublicUserResource;
+
 class AdvertisementResource extends AdvertisementIndexResource
 {
     /**
@@ -13,7 +15,9 @@ class AdvertisementResource extends AdvertisementIndexResource
     public function toArray($request)
     {
         return array_merge(
-            parent::toArray($request),[]
+            parent::toArray($request), [
+                'owner' => new PublicUserResource($this->owner)
+            ]
         );
     }
 }

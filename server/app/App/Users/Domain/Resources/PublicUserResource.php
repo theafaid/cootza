@@ -20,9 +20,7 @@ class PublicUserResource extends JsonResource
             'avatar' => null,
             'member_since' => $this->created_at->diffForHumans(),
             'phone' => '0123456789',
-            'facebook' => null,
-            'twitter'  => null,
-            'instagram' => null,
+            'social' => $this->social,
         ];
     }
 }
