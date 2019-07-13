@@ -1,17 +1,17 @@
 <template>
   <div class="container">
     <div class="row">
-      <ad  v-for="ad in ads" :ad="ad" :key="ad.slug"></ad>
+      <ad-card v-for="ad in ads" :ad="ad" :key="ad.slug"></ad-card>
     </div>
   </div>
 </template>
 
 <script>
-  import Ad from '@/components/ads/ad'
+  import AdCard from '@/components/Ads/AdCard'
 
   export default {
     components: {
-      ad: Ad
+      'ad-card': AdCard
     },
 
     data(){

@@ -11,15 +11,6 @@ Route::get('categories', \App\App\Categories\Actions\CategoryIndexAction::class)
 Route::get('ads', \App\App\Advertisements\Actions\AdvertisementIndexAction::class)->name('advertisements.index');
 Route::get('ads/{advertisement}', \App\App\Advertisements\Actions\AdvertisementShowAction::class)->name('advertisements.show');
 
-//Route::group(['prefix' => 'auth'], function() {
-//    Route::group(['middleware' => 'auth:api'], function() {
-//        Route::get('me', \App\App\Auth\Actions\MeAction::class)->name('me');
-//        Route::post('logout', \App\App\Auth\Actions\UserLogoutAction::class)->name('logout');
-//    });
-//    Route::post('login', \App\App\Auth\Actions\UserLoginAction::class)->name('login');
-//    Route::post('register', \App\App\Auth\Actions\UserRegisterAction::class)->name('register');
-//});
-
 Route::group(['middleware' => 'auth:api'], function() {
     Route::group(['prefix' => 'auth'], function () {
         Route::get('me', \App\App\Auth\Actions\MeAction::class)->name('me');
@@ -30,6 +21,12 @@ Route::group(['middleware' => 'auth:api'], function() {
         'ads/{advertisement}/offers',
         \App\App\AdvertisementOffers\Actions\StoreAdvertisementOfferAction::class
     )->name('advertisement.offers');
+
+    Route::get(
+        'user/ads',
+        \App\App\UserAdvertisements\Actions\UserAdvertisementsIndexAction::class
+    )->name('user.advertisements.index');
+
 });
 
 

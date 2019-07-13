@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Generic\Domain\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 use Waavi\Sanitizer\Laravel\SanitizesInput;

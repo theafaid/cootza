@@ -28,6 +28,8 @@ class AdvertisementOfferStoreService
               $this->providedAdvertisementsForOffer($offer['advertisements'])
             );
 
+        }else{
+            $content['advertisements'] = [];
         }
 
         $content['money'] = $offer['money'];

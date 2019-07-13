@@ -39,6 +39,16 @@ class Advertisement extends Model
         return (new Scoper(request()))->apply($builder, $scopes);
     }
 
+    public function getMainImageAttribute($value)
+    {
+        return $value ?: 'https://cdn-ds.com/noimage/noimage.jpg';
+    }
+
+    public function getVideoPathAttribute($value)
+    {
+        return $value ?: 'https://www.youtube.com/watch?v=0I647GU3Jsc&list=WL&index=2';
+    }
+
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */

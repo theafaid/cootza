@@ -21,7 +21,6 @@ class StoreAdvertisementOfferAction
 
     public function __invoke(Advertisement $advertisement, AdvertisementOfferStoreRequest $request)
     {
-
         return $this->responder->respond(
             $this->service->handle($advertisement, $request->validated()['offer'])
         );

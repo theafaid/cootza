@@ -2,8 +2,7 @@
 
 namespace App\App\AdvertisementOffers\Domain\Requests;
 
-use App\App\AdvertisementOffers\Domain\Rules\AdvertisementOwner;
-use App\Http\Requests\BaseFormRequest;
+use App\Generic\Domain\Requests\BaseFormRequest;
 use Illuminate\Validation\Rule;
 
 class AdvertisementOfferStoreRequest extends BaseFormRequest
@@ -28,10 +27,10 @@ class AdvertisementOfferStoreRequest extends BaseFormRequest
     {
         return [
             'offer.advertisements' => [
-                Rule::requiredIf(is_null($this['offer.money'])), 'present', 'nullable', 'array', 'min:1'
+                Rule::requiredIf(is_null($this['offer.money'])),'nullable', 'present', 'array'
             ],
 
-            'offer.advertisements.*' => ['numeric','distinct', 'exists:advertisements,id'],
+            'offer.advertisements.*' => ['nullable', 'numeric','distinct', 'exists:advertisements,id'],
 
             'offer.money' => [
                 Rule::requiredIf(

@@ -19,8 +19,9 @@ class AdvertisementIndexResource extends JsonResource
         return [
             'id' => $this->id,
             'title' => $this->title,
-            'description' => $this->description,
             'slug' => $this->slug,
+            'description' => $this->description,
+            'main_image' => $this->main_image,
             'created_at' => \Carbon\Carbon::createFromFormat('Y-m-d H:i:s', $this->created_at)->diffForHumans(),
             'category' => new CategoryResource($this->whenLoaded('category'))
         ];

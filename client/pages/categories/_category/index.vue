@@ -7,11 +7,11 @@
 </template>
 
 <script>
-  import Ad from '@/components/ads/ad'
+  import Ad from '@/components/Ads/AdCard'
 
   export default {
     components: {
-      ad: Ad
+      ad: AdCard
     },
 
     data(){

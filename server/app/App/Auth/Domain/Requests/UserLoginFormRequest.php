@@ -2,7 +2,7 @@
 
 namespace App\App\Auth\Domain\Requests;
 
-use App\Http\Requests\BaseFormRequest;
+use App\Generic\Domain\Requests\BaseFormRequest;
 
 class UserLoginFormRequest extends BaseFormRequest
 {

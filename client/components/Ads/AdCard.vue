@@ -7,7 +7,9 @@
         </h5>
       </div>
       <div class="card-body d-flex flex-column">
-        <a href="#"><img class="card-img-top" src="https://via.placeholder.com/150" alt="And this isn't my nose. This is a false one."></a>
+        <nuxt-link :to="{name: 'ads-ad', params: {ad: ad.slug}}">
+          <img class="card-img-top" :src="ad.main_image" :alt="ad.title" :title="ad.title">
+        </nuxt-link>
       </div>
       <div class="card-footer">
         <span><i class="fe fe-clock "></i> {{ad.created_at}}</span>
