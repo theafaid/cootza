@@ -2,7 +2,7 @@
 
 namespace App\App\Auth\Domain\Services;
 
-use App\App\Auth\Domain\Resources\PrivateUserResource;
+use App\App\Users\Domain\Resources\PrivateUserResource;
 
 class UserLoginService
 {

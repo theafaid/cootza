@@ -2,8 +2,7 @@
 
 namespace App\App\Auth\Actions;
 
-use App\App\Auth\Domain\Requests\UserLoginFormRequest;
-use App\App\Auth\Domain\Resources\PrivateUserResource;
+use App\App\Users\Domain\Resources\PrivateUserResource;
 use App\App\Auth\Domain\Services\UserLoginService;
 use App\App\Auth\Responders\UserLoginResponder;
 

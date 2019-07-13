@@ -3,7 +3,7 @@
 namespace App\App\Auth\Domain\Services;
 
 use App\App\Auth\Domain\Repositories\UserRepository;
-use App\App\Auth\Domain\Resources\PrivateUserResource;
+use App\App\Users\Domain\Resources\PrivateUserResource;
 
 class UserRegisterService
 {

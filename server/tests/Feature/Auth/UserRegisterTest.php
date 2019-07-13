@@ -69,6 +69,7 @@ class UserRegisterTest extends TestCase
     /** @test */
     function it_returns_a_user_after_registration()
     {
+        $this->withoutExceptionHandling();
         $this->register($email = 'john@gmail.com')
             ->assertJsonFragment([
                 'email' => $email
