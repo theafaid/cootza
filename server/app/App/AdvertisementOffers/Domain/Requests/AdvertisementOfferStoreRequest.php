@@ -36,7 +36,7 @@ class AdvertisementOfferStoreRequest extends BaseFormRequest
             'offer.money' => [
                 Rule::requiredIf(
                     is_null($this['offer.advertisements']) || empty($this['offer.advertisements'])
-                ), 'present', 'nullable', 'numeric', 'min:1'
+                ), 'present', 'nullable', 'numeric', 'min:1', 'max:25000000'
             ]
         ];
     }

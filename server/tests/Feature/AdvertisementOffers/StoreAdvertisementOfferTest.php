@@ -51,6 +51,16 @@ class StoreAdvertisementOfferTest extends TestCase
     }
 
     /** @test */
+    function if_fails_if_provided_money_more_than_25_million()
+    {
+        $user = UserFactory::create();
+
+        $this->endPoint($user, null, 26000000)
+            ->assertJsonValidationErrors(['offer.money'])
+            ->assertStatus(422);
+    }
+
+    /** @test */
     function advertisements_and_money_keys_for_offer_must_be_presented()
     {
         $user = UserFactory::create();
